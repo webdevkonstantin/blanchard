@@ -1,11 +1,11 @@
-/* Interface */
+/* interface */
 .container {
   max-width: 1700px;
   margin: 0 auto;
-  // padding-left: 50px;
-  padding-left: 2.604vw;
-  // padding-right: 50px;
-  padding-right: 2.604vw;
+  padding-left: 50px;
+  // padding-left: 2.604vw;
+  padding-right: 50px;
+  // padding-right: 2.604vw;
 }
 
 .list-reset {
@@ -85,10 +85,12 @@
 
 .title {
   margin: 0;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
+  // line-height: 51px;
   color: var(--color-text);
 }
 

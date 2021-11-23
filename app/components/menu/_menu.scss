@@ -1,18 +1,25 @@
 /* menu */
 .menu {
-  position: relative;
-  padding-top: 23px;
-  padding-bottom: 28px;
+  // position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 21px;
+  // padding-bottom: 28px;
+  padding-bottom: 21px;
   background-color: rgba(0, 0, 0, 0.4);
   &__container {
     display: flex;
     justify-content: space-between;
+    // padding-left: 49px;
+    // padding-right: 45px;
   }
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 64.7%;
   }
   & .simplebar {
     &-content-wrapper {
@@ -50,7 +57,10 @@
 
 .item {
   &-menu {
-    // position: relative;
+    &:first-child {
+      margin-right: -2px;
+      margin-left: -2px;
+    }
     &--active {
       display: block;
     }
@@ -66,16 +76,9 @@
       color: var(--color-white);
       transition-property: color;
       transition: 0.3s ease-in-out;
-      &.btn--active,
-      &.btn--active:hover:not(:active),
-      &.btn--active:focus-visible::before {
-        background-color: transparent;
-        color: #7943a4;
-      }
       & .icon {
         margin-left: 3px;
       }
-      &:active,
       &.btn--active {
         & .icon {
           transform-style: flat;
@@ -84,15 +87,6 @@
         }
       }
     }
-    // &:nth-child(1) {
-    //   & .item-list {
-    //     &:nth-child(1) {
-    //       & .item-list__link {
-    //         background-image: url("../img/menu/item-menu-bg--1-1.jpg");
-    //       }
-    //     }
-    //   }
-    // }
   }
   /* simplebar item */
   &-list {
