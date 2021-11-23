@@ -1,0 +1,4 @@
+package-lock.json
+/node_modules
+ftp_settings.json
+/build

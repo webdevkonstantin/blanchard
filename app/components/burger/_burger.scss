@@ -1,0 +1,115 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 28px;
+    z-index: 3;
+    cursor: pointer;
+    & > span,
+    & > span::before,
+    & > span::after {
+      display: block;
+      position: absolute;
+      height: 3.65px;
+      background-color: #fff;
+      transition: transform 0.25s ease;
+    }
+    & > span {
+      width: 28.2px;
+    }
+    & > span::before {
+      content: "";
+      top: -11px;
+      width: 36px;
+    }
+    & > span::after {
+      content: "";
+      top: 11px;
+      width: 24px;
+    }
+    &--active > span {
+      transform: rotate(45deg);
+    }
+    &--active > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    &--active > span::after {
+      top: 0;
+      width: 36px;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    height: 27px;
+    & > span,
+    & > span::before,
+    & > span::after {
+      height: 3px;
+    }
+    & > span {
+      width: 28px;
+    }
+    & > span::before {
+      top: -11px;
+    }
+    & > span::after {
+      top: 11px;
+    }
+    &--active > span {
+      transform: rotate(45deg);
+    }
+    &--active > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    &--active > span::after {
+      top: 0;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .burger {
+    width: 25px;
+    height: 18px;
+    & > span,
+    & > span::before,
+    & > span::after {
+      height: 2px;
+    }
+    & > span {
+      width: 16px;
+    }
+    & > span::before {
+      top: -7px;
+      width: 25px;
+    }
+    & > span::after {
+      top: 7px;
+      width: 10px;
+    }
+    &--active > span {
+      transform: rotate(45deg);
+    }
+    &--active > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    &--active > span::after {
+      top: 0;
+      width: 25px;
+      transform: rotate(-90deg);
+    }
+  }
+}

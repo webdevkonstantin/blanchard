@@ -1,0 +1,111 @@
+/* Interface */
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  // padding-left: 50px;
+  padding-left: 2.604vw;
+  // padding-right: 50px;
+  padding-right: 2.604vw;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+  outline: transparent;
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  display: block;
+  background-color: transparent;
+  // border: 0;
+  color: var(--color-white);
+
+  transition-property: background-color, border;
+  transition: 0.2s ease-in-out;
+}
+
+.bg-focus::before,
+.outline-focus::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  background-color: var(--color-accent--dark);
+  z-index: -1;
+
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.outline-focus {
+  background-color: #9d5cd0;
+  border: 3px solid #9d5cd0;
+  border-radius: 100px;
+  padding: 7px 15px;
+  &::before {
+    background-color: transparent;
+    border: 2px solid #c283f3;
+    border-radius: 100px;
+  }
+}
+
+.bg-focus:focus-visible::before,
+.outline-focus:focus-visible::before {
+  opacity: 1;
+}
+.bg-focus:hover:not(:focus-visible) {
+  color: var(--color-accent);
+}
+.bg-focus:active:not(:focus-visible) {
+  color: var(--color-accent--dark);
+}
+.outline-focus:hover:not(:focus-visible) {
+  background-color: transparent;
+  border: 3px solid #d1a9f0;
+}
+
+.outline-focus:active:not(:focus-visible),
+.outline-focus.btn-active:active {
+  background-color: #7943A4; //!
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--color-text);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,166 @@
+<section class="gallery">
+  <div class="container gallery__container">
+    <div class="gallery__left">
+
+      <div class="gallery__top">
+        <h2 class="title color-white">Галерея</h2>
+        <label for="style" class="gallery__label">Фильтр:</label>
+        <select id="style" name="style" class="gallery__select choices">
+          <option value="Живопись">Живопись</option>
+          <option value="Рисунок">Рисунок</option>
+          <option value="Скульптура">Скульптура</option>
+        </select>
+      </div>
+
+      <div class="gallery__bottom gallery-bottom">
+        <p class="gallery-bottom__text">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+         <a href="#" class="gallery-bottom__link bg-focus">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="gallery__right">
+      <div class="gallery__slider swiper">
+
+        <div class="swiper__btns">
+          <button class="swiper__btn swiper__btn--prev">
+            <svg class="icon icon-arrow-left">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <div class="swiper__pagination"></div>
+          <button class="swiper__btn swiper__btn--next">
+            <svg class="icon icon-arrow-right">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="swiper__wrapper swiper-wrapper">
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-1--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-1--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-1--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-1--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-1--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-1--1920.jpg" alt="изображение-1" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-2--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-2--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-2--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-2--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-2--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-2--1920.jpg" alt="изображение-2" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-3--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-3--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-3--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-3--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-3--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-3--1920.jpg" alt="изображение-3" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-4--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-4--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-4--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-4--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-4--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-4--1920.jpg" alt="изображение-4" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-5--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-5--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-5--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-5--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-5--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-5--1920.jpg" alt="изображение-5" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-6--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-6--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-6--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-6--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-6--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-6--1920.jpg" alt="изображение-6" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-7--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-7--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-7--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-7--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-7--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-7--1920.jpg" alt="изображение-7" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-8--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-8--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-8--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-8--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-8--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-8--1920.jpg" alt="изображение-8" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-9--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-9--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-9--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-9--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-9--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-9--1920.jpg" alt="изображение-9" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-10--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-10--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-10--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-10--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-10--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-10--1920.jpg" alt="изображение-10" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-11--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-11--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-11--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-11--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-11--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-11--1920.jpg" alt="изображение-11" />
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <source media="(min-width:1921px)" srcset="img/gallery/gallery-slide-12--3840.jpg" />
+              <source media="(min-width:1200px)" srcset="img/gallery/gallery-slide-12--1920.jpg" />
+              <!-- <source media="(min-width:768px)" srcset="../img/gallery/gallery-slide-12--768.jpg" />
+              <source media="(min-width:576px)" srcset="../img/gallery/gallery-slide-12--576.jpg" />
+              <source media="(max-width:575.98px)" srcset="../img/gallery/gallery-slide-12--320.jpg" /> -->
+              <img class="swiper-slide__img" src="img/gallery/gallery-slide-12--1920.jpg" alt="изображение-12" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
