@@ -1,0 +1,44 @@
+/* burger */
+.burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 28px;
+  z-index: 3;
+  cursor: pointer;
+  & > span,
+  & > span::before,
+  & > span::after {
+    display: block;
+    position: absolute;
+    height: 3.65px;
+    background-color: #fff;
+    transition: transform 0.25s ease;
+  }
+  & > span {
+    width: 28.2px;
+  }
+  & > span::before {
+    content: "";
+    top: -11px;
+    width: 36px;
+  }
+  & > span::after {
+    content: "";
+    top: 11px;
+    width: 24px;
+  }
+  &--active > span {
+    transform: rotate(45deg);
+  }
+  &--active > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  &--active > span::after {
+    top: 0;
+    width: 36px;
+    transform: rotate(-90deg);
+  }
+}

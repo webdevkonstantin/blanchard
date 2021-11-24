@@ -1,0 +1,21 @@
+/* header */
+.header {
+  position: relative;
+  overflow: hidden;
+  &__container {
+    padding-top: 28px;
+    padding-bottom: 25px;
+  }
+  &-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      margin-right: 7px;
+      width: 187px;
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.choices {
+  cursor: pointer;
+  &__inner {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    min-height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-white);
+
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 6px;
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+  }
+  &[data-type*="select-one"] {
+    &::after {
+      top: 19px;
+      right: 14px;
+      margin-top: 0;
+      width: 12px;
+      height: 7px;
+      border-style: none;
+      border-color: transparent;
+      border-width: 0;
+      background-image: url("../img/arrow-down-white.svg");
+      @include bg("contain", "center");
+      transform-style: flat;
+      transition: transform 0.2s ease-in-out;
+    }
+    &.is-open::after {
+      margin-top: 0;
+      transform: rotateX(180deg);
+    }
+    & .choices__inner {
+      padding-bottom: 0;
+    }
+  }
+  &__list {
+    &--single {
+      padding: 0;
+      padding-right: 30px;
+      & .choices__item {
+        padding: 10px 15px;
+      }
+    }
+    &--dropdown {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--color-white);
+
+      background-color: transparent;
+      border: 1px solid var(--color-white);
+      border-radius: 6px;
+      & .choices {
+        &__item {
+          padding: 14px 20px;
+          border: 1px solid transparent;
+          &.is-selected {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &.is-focused {
+    & .choices__inner {
+      border: 1px solid var(--color-white);
+      background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+  }
+  &.is-open {
+    & .choices__inner {
+      border-radius: 6px;
+      background-color: transparent;
+    }
+    & .choices__list {
+      &--dropdown {
+        z-index: 5;
+        border: 1px solid #999;
+        color: #999;
+        & .choices__item {
+          &.is-highlighted {
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            border: 1px solid rgba($color: #fff, $alpha: 0.2);
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}

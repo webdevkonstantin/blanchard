@@ -1,4 +1,4 @@
-/* Nav */
+/* nav */
 .nav {
   display: flex;
   align-items: center;
@@ -31,58 +31,6 @@
     &--login {
       text-align: center;
       font-weight: 400;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 96px;
-    padding-bottom: 51px;
-    padding-left: 50px;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    &--active {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    &__logo {
-      display: none;
-    }
-    &__list {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-right: 0;
-      height: 60%;
-    }
-    &__item {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    &__link {
-      justify-content: center;
-      font-size: 24px;
-      &--login {
-        padding-top: 19px;
-        padding-bottom: 22px;
-        min-width: 257px;
-        font-size: 18px;
-        line-height: 25px;
-        border: 2px solid #9d5cd0;
-        border-radius: 100px;
-      }
     }
   }
 }

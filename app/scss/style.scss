@@ -2,9 +2,10 @@
 @import "base/variables";
 @import "global/fonts";
 @import "global/default";
+@import "global/animation";
 @import "global/interface";
 @import "../components/burger/burger";
-@import "../components/mobile-search/mobile-search";
+// @import "../components/mobile-search/mobile-search";
 @import "../components/icon";
 @import "../components/nav/nav";
 @import "../components/search/search";
@@ -13,3 +14,35 @@
 @import "../components/_page-blocks/hero/hero";
 @import "../components/_page-blocks/about-us/about-us";
 @import "../components/_page-blocks/gallery/gallery";
+// max-width 1200px
+@include media-lg {
+  @import "global/interface--lg";
+  @import "../components/burger/burger--lg";
+  @import "../components/mobile-search/mobile-search--lg";
+  @import "../components/nav/nav--lg";
+  @import "../components/menu/menu--lg";
+  @import "../components/_page-blocks/header/header--lg";
+  @import "../components/_page-blocks/hero/hero--lg";
+  @import "../components/_page-blocks/gallery/gallery--lg";
+}
+// max-width 992px
+@include media-md {
+  @import "../components/burger/burger--md";
+  @import "../components/mobile-search/mobile-search--md";
+  @import "../components/_page-blocks/gallery/gallery--md";
+}
+// max-width 575.98px
+@include media-sm {
+  @import "../components/_page-blocks/hero/hero--sm";
+}
+
+// max-width 575.98px
+@include media-xs {
+  @import "global/interface--xs";
+  @import "../components/burger/burger--xs";
+  @import "../components/mobile-search/mobile-search--xs";
+  @import "../components/_page-blocks/header/header--xs";
+  @import "../components/_page-blocks/hero/hero--xs";
+  @import "../components/_page-blocks/about-us/about-us--xs";
+  @import "../components/_page-blocks/gallery/gallery--xs";
+}

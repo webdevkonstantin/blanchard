@@ -1,0 +1,29 @@
+/* burger */
+.burger {
+  height: 27px;
+  & > span,
+  & > span::before,
+  & > span::after {
+    height: 3px;
+  }
+  & > span {
+    width: 28px;
+  }
+  & > span::before {
+    top: -11px;
+  }
+  & > span::after {
+    top: 11px;
+  }
+  &--active > span {
+    transform: rotate(45deg);
+  }
+  &--active > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  &--active > span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+}

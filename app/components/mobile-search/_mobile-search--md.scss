@@ -1,0 +1,45 @@
+/* mobile search */
+.mobile-search {
+  width: 27px;
+  height: 27px;
+  &-btn {
+    &__open {
+      width: 27px;
+      height: 27px;
+    }
+  }
+  &-form {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 11%;
+    transform: translate(100%, 0);
+    background-color: var(--color-black);
+    &--active {
+      transform: translate(0, 0);
+    }
+    &-btn {
+      &__open {
+        width: 27px;
+        height: 27px;
+      }
+      &__wrap {
+        display: block;
+      }
+      &__close {
+        display: block;
+        width: 27px;
+        height: 27px;
+        background-image: url("../img/icon-close-mobile.svg");
+        @include bg("contain", "center");
+      }
+    }
+    &__input {
+      width: 88%;
+    }
+  }
+}

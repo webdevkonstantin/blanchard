@@ -1,0 +1,32 @@
+/* gallery swiper */
+.gallery {
+  @import "swiper/gallery-swiper--md";
+}
+
+/* gallery */
+.gallery {
+  padding-bottom: 70px;
+  &__container {
+    flex-direction: column;
+  }
+  &__left {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: 280px;
+    min-width: 30px;
+  }
+  &-bottom {
+    display: none;
+    &__text {
+      margin-bottom: 0;
+    }
+    &.tablet {
+      display: block;
+    }
+  }
+  &__right {
+    margin-bottom: 30px;
+    max-width: 100%;
+    padding-top: 10px;
+  }
+}

@@ -79,29 +79,13 @@
 
 .title {
   margin: 0;
-  // margin-bottom: 30px;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
-  // line-height: 51px;
   color: var(--color-text);
 }
 
 .color-white {
   color: var(--color-white);
-}
-
-@media (max-width: 1200px) {
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }

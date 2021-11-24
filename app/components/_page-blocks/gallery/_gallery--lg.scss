@@ -1,0 +1,11 @@
+/* gallery swiper */
+.gallery {
+  @import "swiper/gallery-swiper--lg";
+}
+
+/* gallery */
+.gallery {
+  &__left {
+    min-width: 280px;
+  }
+}

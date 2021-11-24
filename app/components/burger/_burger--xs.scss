@@ -1,0 +1,33 @@
+/* burger */
+.burger {
+  width: 25px;
+  height: 18px;
+  & > span,
+  & > span::before,
+  & > span::after {
+    height: 2px;
+  }
+  & > span {
+    width: 16px;
+  }
+  & > span::before {
+    top: -7px;
+    width: 25px;
+  }
+  & > span::after {
+    top: 7px;
+    width: 10px;
+  }
+  &--active > span {
+    transform: rotate(45deg);
+  }
+  &--active > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  &--active > span::after {
+    top: 0;
+    width: 25px;
+    transform: rotate(-90deg);
+  }
+}
