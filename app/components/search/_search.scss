@@ -6,7 +6,7 @@
     align-items: flex-end;
     justify-content: space-between;
     &__btn {
-      // margin-right: 9px;
+      margin-right: 9px;
       min-width: 22px;
       height: 22px;
       background-image: url("../img/icon-search.svg");
@@ -48,11 +48,5 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .search {
-    display: none;
   }
 }

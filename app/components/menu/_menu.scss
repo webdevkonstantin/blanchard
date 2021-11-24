@@ -1,19 +1,12 @@
 /* menu */
 .menu {
-  // position: relative;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
   padding-top: 21px;
-  // padding-bottom: 28px;
   padding-bottom: 21px;
   background-color: rgba(0, 0, 0, 0.4);
   &__container {
     display: flex;
     justify-content: space-between;
-    // padding-left: 49px;
-    // padding-right: 45px;
   }
   &__list {
     display: flex;
@@ -38,32 +31,12 @@
   }
 }
 
-/* simplebar-container */
-.container--dropdown {
-  position: absolute;
-  top: 100%;
-  display: none;
-  padding: 40px;
-  padding-right: 20px;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: var(--color-white);
-  /* simplebar */
-  &-list {
-    height: 220px;
-    padding-right: 20px;
-  }
-}
-
 .item {
   &-menu {
     &:first-child {
       margin-right: -2px;
       margin-left: -2px;
-    }
-    &--active {
-      display: block;
-    }
+    }  
     &__btn {
       position: relative;
       z-index: 1;
@@ -87,10 +60,27 @@
         }
       }
     }
+    & .dropdown {
+      position: absolute;
+      top: 100%;
+      display: none;
+      padding: 40px;
+      padding-right: 20px;
+      width: 300px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: var(--color-white);
+      &-list {
+        height: 220px;
+        padding-right: 20px;
+      }
+      &--active {
+        display: block;
+      }
+    }
   }
-  /* simplebar item */
   &-list {
     margin-bottom: 20px;
+    height: 40px;
     &:last-child {
       margin-bottom: 0px;
     }
@@ -99,13 +89,13 @@
       z-index: 1;
       display: block;
       padding: 8px 14px;
+      height: 100%;
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
-      border: 2px solid transparent;
-      // background-color: #d88f99;
+      // border: 2px solid transparent;
       background-color: var(--color-accent--dark);
-      @include bg("auto", "center");
+      @include bg("cover", "center");
       color: var(--color-white);
       transition: border 0.3s ease-in-out;
       &::before {
@@ -116,21 +106,25 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-
+        border: 2px solid transparent;
         background-color: transparent;
-        transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.2s ease-in-out, border 0.3s ease-in-out;
       }
       &:hover:not(:focus-visible) {
-        border: 2px solid #9d5cd0;
+        &::before{
+          border: 2px solid #9d5cd0;
+        }
       }
       &:focus-visible {
         outline: transparent;
-        border: 2px solid #9d5cd0;
         box-shadow: 0px 4px 4px 0px #00000040;
+        &::before{
+          border: 2px solid #9d5cd0;
+        }
       }
       &:active:not(:focus-visible) {
-        border: 2px solid #d1a9f0;
         &::before {
+          border: 2px solid #d1a9f0;
           background-color: rgba($color: #c283f3, $alpha: 0.4);
         }
       }
@@ -215,5 +209,12 @@
         background-image: url("../img/menu/item-menu-bg--5-4.jpg");
       }
     }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
   }
 }

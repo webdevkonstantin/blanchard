@@ -1,8 +1,9 @@
+/* burger */
 .burger {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .burger {
     position: relative;
     display: flex;

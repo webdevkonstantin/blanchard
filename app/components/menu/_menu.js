@@ -2,7 +2,7 @@
 document.querySelectorAll(".item-menu__btn").forEach((item) => {
   item.addEventListener("click", function () {
     let btn = this;
-    let dropdown = this.parentElement.querySelector(".container--dropdown");
+    let dropdown = this.parentElement.querySelector(".dropdown");
 
     document.querySelectorAll(".item-menu__btn").forEach((el) => {
       if (el != btn) {
@@ -10,12 +10,12 @@ document.querySelectorAll(".item-menu__btn").forEach((item) => {
       }
     });
 
-    document.querySelectorAll(".container--dropdown").forEach((el) => {
+    document.querySelectorAll(".dropdown").forEach((el) => {
       if (el != dropdown) {
-        el.classList.remove("item-menu--active");
+        el.classList.remove("dropdown--active");
       }
     });
-    dropdown.classList.toggle("item-menu--active");
+    dropdown.classList.toggle("dropdown--active");
     btn.classList.toggle("btn--active");
   });
 });
@@ -23,8 +23,8 @@ document.querySelectorAll(".item-menu__btn").forEach((item) => {
 document.addEventListener("click", function (e) {
   let target = e.target;
   if (!target.closest(".menu__list")) {
-    document.querySelectorAll(".container--dropdown").forEach((el) => {
-      el.classList.remove("item-menu--active");
+    document.querySelectorAll(".dropdown").forEach((el) => {
+      el.classList.remove("dropdown--active");
     });
     document.querySelectorAll(".item-menu__btn").forEach((el) => {
       el.classList.remove("btn--active");
@@ -33,7 +33,7 @@ document.addEventListener("click", function (e) {
 });
 
 /* SimpleBar */
-document.querySelectorAll(".container--dropdown-list").forEach((menuList) => {
+document.querySelectorAll(".dropdown-list").forEach((menuList) => {
   new SimpleBar(menuList, {
     /* чтобы изначально ползунок был виден */
     autoHide: false,

@@ -1,11 +1,9 @@
 /* interface */
 .container {
-  max-width: 1700px;
+  max-width: 1630px;
   margin: 0 auto;
-  padding-left: 50px;
-  // padding-left: 2.604vw;
-  padding-right: 50px;
-  // padding-right: 2.604vw;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list-reset {
@@ -25,13 +23,10 @@
 .btn {
   position: relative;
   z-index: 1;
-  cursor: pointer;
-
   display: block;
   background-color: transparent;
-  // border: 0;
   color: var(--color-white);
-
+  cursor: pointer;
   transition-property: background-color, border;
   transition: 0.2s ease-in-out;
 }
@@ -44,18 +39,17 @@
   bottom: -8px;
   left: -8px;
   right: -8px;
-  background-color: var(--color-accent--dark);
   z-index: -1;
-
+  background-color: var(--color-accent--dark);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
 .outline-focus {
+  padding: 7px 15px;
   background-color: #9d5cd0;
   border: 3px solid #9d5cd0;
   border-radius: 100px;
-  padding: 7px 15px;
   &::before {
     background-color: transparent;
     border: 2px solid #c283f3;
@@ -98,7 +92,7 @@
   color: var(--color-white);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .container {
     padding-left: 50px;
     padding-right: 50px;
