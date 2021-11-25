@@ -3,7 +3,8 @@ const ftp = require("vinyl-ftp");
 const chalk = require("chalk");
 const db = require("./mongodb");
 
-const projectDir = db.projectName + "/";
+const projectName = db.projectName;
+const projectDir = projectName + "/";
 
 module.exports = function deploy(done) {
   db.getCollection("_ftp_settings")
@@ -23,8 +24,11 @@ module.exports = function deploy(done) {
             `Deploing from ${chalk.cyan.underline.bold(
               projectDir + "build/"
             )} to ${chalk.cyan.underline.bold(
-              "http://" + ftpSettings.host + "/" + ftpSettings.rootDir + projectDir
-            )} successfully finished`
+              "https://" + ftpSettings.host + "/" + ftpSettings.rootDir + projectDir
+            )} successfully finished\nLink for watching: ${chalk.cyan.underline.bold(
+              "http://" + projectName + ".stasenko-webdeveloper.ru"
+            )}
+            `
           )
         )
       );

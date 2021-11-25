@@ -17,7 +17,7 @@ function writeToFile(path, data, message) {
 
 function writePluginsToFile(url, type, source) {
   let filePath = type == "css" ? cssFilePath : jsFilePath;
-  let messageBegin = type == "css" ? chalk.blue.bold("CSS link ") : "JS script ";
+  let messageBegin = type == "css" ? chalk.magenta.bold("CSS <link> ") : "JS <script> ";
   let message =
     messageBegin +
     chalk.green.underline.bold(url) +
