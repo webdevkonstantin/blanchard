@@ -21,18 +21,25 @@
 }
 
 .btn {
-  position: relative;
-  z-index: 1;
   display: block;
   background-color: transparent;
   color: var(--color-white);
   cursor: pointer;
-  transition-property: background-color, border;
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.bg-focus,
+.outline-focus,
+.link-focus,
+.transparent-focus {
+  position: relative;
+  z-index: 1;
 }
 
 .bg-focus::before,
-.outline-focus::before {
+.outline-focus::before,
+.link-focus::before,
+.transparent-focus::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -42,7 +49,21 @@
   z-index: -1;
   background-color: var(--color-accent--dark);
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bg-focus:focus-visible::before,
+.outline-focus:focus-visible::before,
+.link-focus:focus-visible::before,
+.transparent-focus:focus-visible::before  {
+  opacity: 1;
+}
+
+.bg-focus:hover:not(:focus-visible) {
+  color: var(--color-accent);
+}
+.bg-focus:active:not(:focus-visible) {
+  color: var(--color-accent--dark);
 }
 
 .outline-focus {
@@ -56,25 +77,48 @@
     border-radius: 100px;
   }
 }
-
-.bg-focus:focus-visible::before,
-.outline-focus:focus-visible::before {
-  opacity: 1;
-}
-.bg-focus:hover:not(:focus-visible) {
-  color: var(--color-accent);
-}
-.bg-focus:active:not(:focus-visible) {
-  color: var(--color-accent--dark);
-}
 .outline-focus:hover:not(:focus-visible) {
   background-color: transparent;
   border: 3px solid #d1a9f0;
 }
-
 .outline-focus:active:not(:focus-visible),
 .outline-focus.btn-active:active {
-  background-color: #7943A4; //!
+  background-color: #7943a4; //!
+}
+
+.transparent-focus {
+  background-color: transparent;
+  border: 2px solid #9d5cd0;
+  border-radius: 100px;
+  color: #9d5cd0;
+  &::before {
+    background-color: transparent;
+    border: 2px solid #c283f3;
+    border-radius: 100px;
+  }
+}
+.transparent-focus:hover:not(:focus-visible) {
+  background-color: #9D5CD0;
+  color: var(--color-white);
+}
+.transparent-focus:active:not(:focus-visible) {
+  background-color: #7943A4;
+  border: 2px solid #D1A9F0;
+}
+
+.link-focus {
+  &::before {
+    background-color: #9D5CD0;
+  }
+}
+.link-focus:focus-visible {
+  color: var(--color-white);
+}
+.link-focus:hover:not(:focus-visible) {
+  color: #7943A4;
+}
+.link-focus:active:not(:focus-visible) {
+  color: #333333;
 }
 
 .title {
