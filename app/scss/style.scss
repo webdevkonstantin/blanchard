@@ -4,17 +4,20 @@
 @import "global/default";
 @import "global/animation";
 @import "global/interface";
+// components
 @import "../components/burger/burger";
 // @import "../components/mobile-search/mobile-search";
 @import "../components/icon";
 @import "../components/nav/nav";
 @import "../components/search/search";
 @import "../components/menu/menu";
+// blocks
 @import "../components/_page-blocks/header/header";
 @import "../components/_page-blocks/hero/hero";
 @import "../components/_page-blocks/about-us/about-us";
 @import "../components/_page-blocks/gallery/gallery";
 @import "../components/_page-blocks/catalog/catalog";
+@import "../components/_page-blocks/events/events";
 // max-width 1200px
 @include media-lg {
   @import "global/interface--lg";

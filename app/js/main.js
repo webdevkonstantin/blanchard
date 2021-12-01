@@ -5,3 +5,4 @@
 @@include('../components/_page-blocks/hero/_hero.js')
 @@include('../components/_page-blocks/gallery/_gallery.js')
 @@include('../components/_page-blocks/catalog/_catalog.js')
+@@include('../components/_page-blocks/events/_events.js')
