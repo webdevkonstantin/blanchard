@@ -1,4 +1,4 @@
-/* Menu */
+/* menu */
 document.querySelectorAll(".item-menu__btn").forEach((item) => {
   item.addEventListener("click", function () {
     let btn = this;
