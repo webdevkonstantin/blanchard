@@ -59,6 +59,9 @@
     height: calc((100% - 50px) / 2);
     cursor: pointer;
     background-color: grey;
+    &:focus-visible {
+      outline: 2px solid var(--color-accent--dark);
+    }
     &::before {
       content: "";
       position: absolute;

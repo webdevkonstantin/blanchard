@@ -1,8 +1,11 @@
+/* gallery choices */
+.gallery {
+  @import "choices/gallery-choices--md";
+}
 /* gallery swiper */
 .gallery {
   @import "swiper/gallery-swiper--md";
 }
-
 /* gallery */
 .gallery {
   padding-bottom: 70px;
