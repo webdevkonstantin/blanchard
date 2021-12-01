@@ -4,7 +4,6 @@
 }
 /* catalog */
 .catalog {
-  height: 100vh;
   padding-top: 80px;
   padding-bottom: 80px;
   &__top {
@@ -106,8 +105,10 @@
     justify-content: space-between;
   }
   &__left {
+    margin-right: 50px;
     max-width: 750px;
     // width: 49%;
+    width: 100%;
   }
   &-left {
     &__content {
@@ -158,5 +159,6 @@
   &__right {
     max-width: 800px;
     // width: 49%;
+    width: 100%;
   }
 }
