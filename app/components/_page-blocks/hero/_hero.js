@@ -1,5 +1,5 @@
-/* Hero Swiper */
-const swiper = new Swiper(".hero-swiper", {
+/* hero swiper */
+let heroSwiper = new Swiper(".hero .swiper", {
   // Default parameters
   slidesPerView: 1,
   spaceBetween: 10,
@@ -19,8 +19,3 @@ const swiper = new Swiper(".hero-swiper", {
     clickable: true,
   },
 });
-
-// When slide starts to change slideChangeTransitionStart event fires and we use it to scale down the image.
-// swiper.on("slideChangeTransitionStart", swiper.zoom.out);
-// And when transition has finished scale it up.
-// swiper.on("slideChangeTransitionEnd", swiper.zoom.in);
