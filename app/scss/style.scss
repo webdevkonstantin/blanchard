@@ -14,6 +14,7 @@
 @import "../components/_page-blocks/hero/hero";
 @import "../components/_page-blocks/about-us/about-us";
 @import "../components/_page-blocks/gallery/gallery";
+@import "../components/_page-blocks/catalog/catalog";
 // max-width 1200px
 @include media-lg {
   @import "global/interface--lg";
@@ -31,16 +32,16 @@
   @import "../components/mobile-search/mobile-search--md";
   @import "../components/_page-blocks/gallery/gallery--md";
 }
-// max-width 575.98px
+// max-width 768px
 @include media-sm {
   @import "../components/_page-blocks/hero/hero--sm";
 }
-
 // max-width 575.98px
 @include media-xs {
   @import "global/interface--xs";
   @import "../components/burger/burger--xs";
   @import "../components/mobile-search/mobile-search--xs";
+  @import "../components/nav/nav--xs";
   @import "../components/_page-blocks/header/header--xs";
   @import "../components/_page-blocks/hero/hero--xs";
   @import "../components/_page-blocks/about-us/about-us--xs";

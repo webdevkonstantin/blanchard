@@ -1,0 +1,12 @@
+.simplebar {
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-content-wrapper {
+    outline: transparent;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}

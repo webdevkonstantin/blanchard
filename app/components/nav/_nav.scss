@@ -1,3 +1,7 @@
+/* .nav simplebar */
+.nav{
+  @import "simplebar/nav-simplebar";
+}
 /* nav */
 .nav {
   display: flex;
@@ -13,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     margin-right: 95px;
-    margin-right: 4.948vw;
+    // margin-right: 4.948vw;
     width: 56.65%;
   }
   &__item {

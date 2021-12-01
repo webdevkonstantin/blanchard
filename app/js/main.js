@@ -1,5 +1,7 @@
 @@include('../components/burger/_burger.js')
 @@include('../components/mobile-search/_mobile-search.js')
+@@include('../components/nav/_nav.js')
 @@include('../components/menu/_menu.js')
 @@include('../components/_page-blocks/hero/_hero.js')
 @@include('../components/_page-blocks/gallery/_gallery.js')
+@@include('../components/_page-blocks/catalog/_catalog.js')
