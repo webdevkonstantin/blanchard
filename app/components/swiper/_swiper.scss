@@ -1,0 +1,56 @@
+/* common swiper styles */
+.swiper {
+  &__btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 3px;
+  }
+  &__btn--prev,
+  &__btn--next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    background-color: #666;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+    &:hover:not(:focus-visible) {
+      background-color: #9d5cd0;
+    }
+    &:focus-visible {
+      outline: transparent;
+      border: 2px solid #000;
+    }
+    &:active:not(:focus-visible) {
+      background-color: #7943a4;
+      border: 2px solid #000;
+    }
+  }
+  &__btn--prev {
+    margin-right: 8px;
+  }
+  &__btn.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:hover:not(:focus-visible),
+    &:active:not(:focus-visible),
+    &:focus-visible {
+      background-color: #666;
+      border: 2px solid transparent;
+    }
+  }
+  &__pagination {
+    max-width: 55px;
+    margin-right: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+  }
+}
