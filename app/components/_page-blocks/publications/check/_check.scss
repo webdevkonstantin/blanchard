@@ -1,0 +1,72 @@
+// checkbox
+.check {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  // real checkbox
+  &__input {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: -1;
+    // not checked
+    &:not(:checked) + .check__box::after {
+      opacity: 0;
+    }
+    // checked and focused box
+    &:checked + .check__box,
+    &:focus-visible + .check__box {
+      border: 1px solid #c283f3;
+    }
+    // checked and focused text
+    &:checked ~ .check__text,
+    &:focus-visible ~ .check__text {
+      color: #c283f3;
+    }
+  }
+  // custom checkbox
+  // frame
+  &__box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    background-color: transparent;
+    transition: border 0.3s ease-in-out;
+    // checkmark/tick/dot inside the frame
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: #c283f3;
+      transition: opacity 0.3s ease;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
+  &:hover:not(:focus-visible) .check__box {
+    border: 1px solid #c283f3;
+  }
+  &:hover:not(:focus-visible) .check__text {
+    color: #c283f3;
+  }
+  &:active:not(:focus-visible) .check__box::after {
+    opacity: 1;
+  }
+}

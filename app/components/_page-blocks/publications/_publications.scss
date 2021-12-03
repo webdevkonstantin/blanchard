@@ -1,0 +1,58 @@
+/* publications checkbox */
+.publications {
+  @import "check/check";
+}
+/* publications price-filter */
+.publications {
+  @import "price-filter/price-filter";
+}
+/* publications swiper */
+.publications {
+  @import "swiper/publications-swiper";
+}
+/* publications card */
+.publications {
+  @import "card/publications-card";
+}
+/* publications */
+.publications {
+  // min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/publications/publications-bg.jpg");
+  @include bg("cover", "center");
+  &__container {
+    display: flex;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    max-width: 400px;
+    width: 100%;
+  }
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .filter {
+    &__caption {
+      margin: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      color: #ffffff;
+    }
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+  &__right {
+    max-width: 1150px;
+    width: 100%;
+    padding-top: 33px;
+  }
+}

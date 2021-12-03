@@ -1,0 +1,117 @@
+<section class="publications" id="publications">
+  <div class="container publications__container">
+    <div class="publications__left">
+      <h2 class="title color-white">Издания</h2>
+      <div class="publications__filter filter">
+        <div class="filter__top">
+          <h4 class="filter__caption">Категории</h4>
+          <ul class="list-reset filter__list">
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Бестселлеры </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Искусство </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Архитектура </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Дизайн </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Мода </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Детям </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Художественная литература </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Публицистика </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Путеводители </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Философия </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Учебная литература </span>
+              </label>
+            </li>
+            <li class="filter__item item-filter">
+              <label class="item-filter__check check">
+                <input class="check__input" type="checkbox" />
+                <span class="check__box"></span>
+                <span class="check__text"> Журналы и газеты </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__bottom">
+          <h4 class="filter__caption">Цена</h4>
+          <div class="filter__price price-filter">
+            <div class="price-filter__left">
+              <label for="amount-from" class="price-filter__label"> От </label>
+              <input type="text" class="price-filter__input" id="amount-from" value="50">
+            </div>
+            <div class="price-filter__center">
+              <label for="amount-to" class="price-filter__label"> до </label>
+              <input type="text" class="price-filter__input" id="amount-to" value="25 000">
+            </div>
+            <div class="price-filter__right">
+              руб.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="publications__right">
+      @@include('swiper/_publications-swiper.html')
+    </div>
+  </div>
+</section>
