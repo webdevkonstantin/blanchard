@@ -6,3 +6,4 @@
 @@include('../components/_page-blocks/gallery/_gallery.js')
 @@include('../components/_page-blocks/catalog/_catalog.js')
 @@include('../components/_page-blocks/events/_events.js')
+@@include('../components/_page-blocks/publications/_publications.js')
