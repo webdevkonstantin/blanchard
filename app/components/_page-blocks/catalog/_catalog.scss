@@ -5,7 +5,7 @@
 /* catalog */
 .catalog {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   &__top {
     display: flex;
     align-items: center;
@@ -87,8 +87,11 @@
   }
   &__pane {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     &.active {
       display: block;
+      opacity: 1;
     }
   }
   &__descr {
