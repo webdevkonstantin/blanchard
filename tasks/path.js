@@ -28,12 +28,12 @@ module.exports = path = {
   src: {
     //Пути откуда брать исходники
     html: `${srcDir}/*.html`, //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-    html_components: `${srcDir}/components/**/*.html`,
-    not_html_components: `!${srcDir}/components/**/*.html`,
+    html_components: `${srcDir}/__page/**/*.html`,
+    not_html_components: `!${srcDir}/__page/**/*.html`,
     pug: `${srcDir}/pug/*.pug`,
     js: `${srcDir}/js/*.js`,
     js_dest: `${srcDir}/js/`,
-    js_components: `${srcDir}/components/**/*.js`,
+    js_components: `${srcDir}/__page/**/*.js`,
     sass: `${srcDir}/sass/*.sass`,
     scss: `${srcDir}/scss/*.scss`,
     css: `${srcDir}/css/*`,
@@ -45,18 +45,18 @@ module.exports = path = {
     fonts_ttf: `${srcDir}/fonts/**/*.ttf`,
     fonts_woff: `${srcDir}/fonts/**/*.woff`,
     fonts_woff2: `${srcDir}/fonts/**/*.woff2`,
-    page_blocks: `${srcDir}/components/_page-blocks`,
+    page_blocks: `${srcDir}/__page/blocks`,
   },
   watch: {
     //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: `${srcDir}/**/*.html`,
     json: `${srcDir}/**/*.json`,
     js: `${srcDir}/js/**/*.js`,
-    js_components: `${srcDir}/components/**/*.js`,
+    js_components: `${srcDir}/__page/**/*.js`,
     not_minjs: `!${srcDir}/js/*.min.js`,
     sass: `${srcDir}/sass/**/*.sass`,
     scss: `${srcDir}/scss/**/*.scss`,
-    scss_components: `${srcDir}/components/**/*.scss`,
+    scss_components: `${srcDir}/__page/**/*.scss`,
     css: `${srcDir}/css/**/*`,
     img: `${srcDir}/img/**/*`,
     fonts: `${srcDir}/fonts/**/*`,

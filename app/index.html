@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('components/_page-blocks/_head.html', {
+  @@include('__page/blocks/_head/_head.html', {
     "description": "",
     "favicon": "img/favicon",
     "title": "Blanchard - Художественная Галерея"
   })
   <body>
-    @@include('components/_page-blocks/header/_header.html')
+    @@include('__page/blocks/header/_header.html')
     <main class="main">
-      @@include('components/_page-blocks/about-us/_about-us.html')
-      @@include('components/_page-blocks/gallery/_gallery.html')
-      @@include('components/_page-blocks/catalog/_catalog.html')
-      @@include('components/_page-blocks/events/_events.html')
-      @@include('components/_page-blocks/publications/_publications.html')
+      @@include('__page/blocks/about-us/_about-us.html')
+      @@include('__page/blocks/gallery/_gallery.html')
+      @@include('__page/blocks/catalog/_catalog.html')
+      @@include('__page/blocks/events/_events.html')
+      @@include('__page/blocks/publications/_publications.html')
     </main>
-    @@include('components/_page-blocks/footer/_footer.html')
-    @@include('components/_page-blocks/_scripts.html')
+    @@include('__page/blocks/footer/_footer.html')
+    @@include('__page/blocks/_bottom/_scripts.html')
   </body>
 </html>
