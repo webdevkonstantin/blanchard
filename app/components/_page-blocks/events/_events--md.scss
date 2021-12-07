@@ -1,0 +1,22 @@
+/* events */
+.events {
+  &__list {
+    gap: 34px;
+  }
+  &__item {
+    width: calc((100% - 34px) / 2);
+    &:not(:nth-child(-n + 2)) {
+      display: none;
+    }
+  }
+}
+
+// .item-events {
+//   &__content {
+//     padding-top: 50px;
+//     padding-right: 27px;
+//     padding-bottom: 50px;
+//     padding-left: 35px;
+//     min-height: 382px;
+//   }
+// }

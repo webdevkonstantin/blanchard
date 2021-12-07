@@ -16,7 +16,6 @@
 }
 /* publications */
 .publications {
-  // min-height: 100vh;
   padding-top: 80px;
   padding-bottom: 80px;
   background-image: url("../img/publications/publications-bg.jpg");
@@ -27,8 +26,10 @@
   &__left {
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
+    flex: 1;
+    margin-right: 18px;
     max-width: 400px;
+    min-width: 277px;
     width: 100%;
   }
   &__filter {
@@ -38,6 +39,9 @@
     height: 100%;
   }
   .filter {
+    &__top {
+      margin-bottom: 25px;
+    }
     &__caption {
       margin: 0;
       margin-bottom: 10px;
@@ -46,13 +50,18 @@
       line-height: 32px;
       color: #ffffff;
     }
-    &__item {
-      margin-bottom: 15px;
-    }
+    // &__item {
+    //   margin-bottom: 15px;
+    //   &:last-child {
+    //     margin-bottom: 0;
+    //   }
+    // }
   }
   &__right {
+    display: flex;
+    padding-top: 33px;
     max-width: 1150px;
     width: 100%;
-    padding-top: 33px;
+    overflow: hidden;
   }
 }

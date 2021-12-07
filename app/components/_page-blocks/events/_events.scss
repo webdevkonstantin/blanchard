@@ -1,7 +1,7 @@
 /* events swiper */
-.events {
-  @import "swiper/events-swiper";
-}
+// .events {
+//   @import "swiper/events-swiper";
+// }
 /* events */
 .events {
   padding-top: 40px;
@@ -9,11 +9,11 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     margin-bottom: 50px;
   }
   &__item {
-    width: calc((100% - 40px * 2) / 3);
+    width: calc((100% - 50px * 2) / 3);
     &:not(:nth-child(-n + 2)) {
       display: block;
     }
@@ -36,7 +36,7 @@
 }
 
 .item-events {
-  max-width: 500px;
+  // max-width: 500px;
   &__img {
     width: 100%;
     height: 100%;
@@ -52,10 +52,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 49px;
-    padding-right: 50px;
+    padding-right: 47px;
     padding-bottom: 43px;
     padding-left: 50px;
-    min-height: 400px;
+    min-height: 307px;
     border-right: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
     border-left: 1px solid #cacaca;
@@ -89,7 +89,7 @@
     color: #333333;
   }
   &__link {
-    font-weight: 400;
+    // font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     border-bottom: 1px solid #9d5cd0;

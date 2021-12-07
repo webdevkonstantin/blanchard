@@ -1,0 +1,23 @@
+.swiper {
+   width: 92%;
+  // &-wrapper {
+    // padding-left: 27px;
+    // margin-left: 4%;
+    // padding-right: 27px;
+    // padding-right: 4%;
+    
+    // height: 517px;
+    overflow: visible;
+  // }
+  &__btns {
+    margin-left: -5%;
+  }
+  &-slide {
+    max-width: 47.231%;
+    // width: 43.413%;
+    // max-width: 290px;
+    // position: relative;
+    // height: 100%;
+    // background-color: transparent;
+  }
+}

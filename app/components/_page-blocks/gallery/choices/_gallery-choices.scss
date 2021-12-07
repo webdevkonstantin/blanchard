@@ -13,6 +13,7 @@
     background-color: transparent;
     border: 1px solid var(--color-white);
     border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
     &:hover {
       background-color: rgba($color: #fff, $alpha: 0.2);
     }
@@ -85,6 +86,7 @@
         border: 1px solid #999;
         color: #999;
         & .choices__item {
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
           &.is-highlighted {
             background-color: rgba($color: #fff, $alpha: 0.2);
             border: 1px solid rgba($color: #fff, $alpha: 0.2);

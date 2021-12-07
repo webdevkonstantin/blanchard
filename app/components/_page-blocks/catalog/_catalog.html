@@ -1,5 +1,5 @@
 <section class="catalog" id="catalog">
-  <div class="container catalog__container">
+  <div class="container">
     <div class="catalog__top">
       <h2 class="title catalog__title">Каталог</h2>
       <ul class="catalog__list list-reset tabs__nav">
@@ -21,20 +21,20 @@
       </ul>
     </div>
     <div class="catalog__content tabs__content">
-      <!-- активная вкладка -->
-      <div class="tabs__pane tabs-pane active" data-target="active">
+      <!-- активный таб каталога -->
+      <div class="tabs__pane active" data-target="active">
         <p class="tabs__descr">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
         </p>
         <div class="tabs__inner">
           <div class="tabs__left tabs-left">
-            <!-- Блок активный -->
+            <!-- активный таб для аккордеона -->
             <div class="tabs-left__content active" data-target="tab-left-active">
               <div class="tabs-left__img-wrap">
                 <picture>
                   <source media="(min-width:1921px)" srcset="img/catalog/catalog-painter--3840.jpg" />
                   <source media="(min-width:1200px)" srcset="img/catalog/catalog-painter--1920.jpg" />
-                  <source media="(min-width:768px)" srcset="img/catalog/catalog-painter--1024.jpg" />
+                  <source media="(min-width:992px)" srcset="img/catalog/catalog-painter--1024.jpg" />
                   <source media="(min-width:576px)" srcset="img/catalog/catalog-painter--768.jpg" />
                   <source media="(max-width:575.98px)" srcset="img/catalog/catalog-painter--320.jpg" />
                   <img class="tabs-left__img" src="img/catalog/catalog-painter--1920.jpg" alt="Художник" />
@@ -43,70 +43,22 @@
               <div class="tabs-left__text">
                 <h3 class="tabs-left__title">Доменико Гирландайо</h3>
                 <p class="tabs-left__date">
-                  <time datetime="1448-06-02">2 июня 1448</time> — <time datetime="1494-01-11">11 января 1494.</time>
+                  <time datetime="1448-06-02">2 июня 1448</time> — <time datetime="1494-01-11">11 января 1494</time>.
                 </p>
                 <p class="tabs-left__paragraph">
                   Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
                 </p>
               </div>
             </div>
-            <!-- Блок заглушка -->
-            <div class="tabs-left__content" data-target="tab-left-plug">
-              <div class="tabs-left__img-wrap">
-                <picture>
-                  <source media="(min-width:1921px)" srcset="img/catalog/catalog-plug-img--3840.jpg" />
-                  <source media="(min-width:1200px)" srcset="img/catalog/catalog-plug-img--1920.jpg" />
-                  <source media="(min-width:768px)" srcset="img/catalog/catalog-plug-img--1024.jpg" />
-                  <source media="(min-width:576px)" srcset="img/catalog/catalog-plug-img--768.jpg" />
-                  <source media="(max-width:575.98px)" srcset="img/catalog/catalog-plug-img--320.jpg" />
-                  <img class="tabs-left__img" src="img/catalog/catalog-plug-img--1920.jpg" alt="Художник" />
-                </picture>
-              </div>
-              <div class="tabs-left__text">
-                <h3 class="tabs-left__title">Что мы о нём знаем?</h3>
-                <p class="tabs-left__paragraph">
-                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-left__link">В галерею</a>
-              </div>
-
-
-            </div>
-          </div> 
+            <!-- таб-заглушка для аккордеона -->
+            @@include('plugs/_tab-left-plug.html')
+          </div>
+          <!-- аккордеон активной вкладки -->
           @@include('accordion/_catalog-accordion.html')
         </div>
       </div>
-      <!-- вкладка-заглушка -->
-      <div class="tabs__pane tabs-pane" data-target="plug-active">
-        <p class="tabs__descr">
-          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
-        </p>
-        <div class="tabs__inner">
-          <div class="tabs__left tabs-left">
-            <!-- Блок заглушка -->
-            <div class="tabs-left__content plug">
-              <div class="tabs-left__img-wrap">
-                <picture>
-                  <source media="(min-width:1921px)" srcset="img/catalog/catalog-plug-img--3840.jpg" />
-                  <source media="(min-width:1200px)" srcset="img/catalog/catalog-plug-img--1920.jpg" />
-                  <source media="(min-width:768px)" srcset="img/catalog/catalog-plug-img--1024.jpg" />
-                  <source media="(min-width:576px)" srcset="img/catalog/catalog-plug-img--768.jpg" />
-                  <source media="(max-width:575.98px)" srcset="img/catalog/catalog-plug-img--320.jpg" />
-                  <img class="tabs-left__img" src="img/catalog/catalog-plug-img--1920.jpg" alt="Художник" />
-                </picture>
-              </div>
-              <div class="tabs-left__text">
-                <h3 class="tabs-left__title">Что мы о нём знаем?</h3>
-                <p class="tabs-left__paragraph">
-                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-left__link">В галерею</a>
-              </div>
-            </div>
-          </div> 
-          @@include('accordion/_catalog-accordion-plug.html')
-        </div>
-      </div>
+      <!-- таб-заглушка каталога -->
+      @@include('plugs/_catalog-plug.html')
     </div>
   </div>
 </section>

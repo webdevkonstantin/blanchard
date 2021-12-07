@@ -1,0 +1,65 @@
+.card {
+  margin-bottom: 50px;
+  min-width: 100px;
+  &__img {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    // object-position: center;
+    &-wrap {
+      margin-bottom: 10px;
+      // font-size: 0;
+    }
+  }
+  &__info {
+    margin-bottom: 10px;
+  }
+  // &__caption {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   margin: 0;
+  //   color: #ffffff;
+  // }
+  &__title {
+    max-width: 100%;
+    // font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+  }
+  &__price {
+    display: none;
+    // font-style: italic;
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 16px;
+    &.mobile-visible {
+      display: block;
+      font-style: italic;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__author {
+    // font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    // color: #ffffff;
+  }
+  &__action {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    // width: 100%;
+    min-width: 50px;
+    padding: 15px;
+    // font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    // color: #ffffff;
+  }
+}
