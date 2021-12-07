@@ -1,5 +1,7 @@
 .swiper {
    width: 92%;
+   padding-left: 0;
+   padding-bottom: 0;
   // &-wrapper {
     // padding-left: 27px;
     // margin-left: 4%;
@@ -10,7 +12,7 @@
     overflow: visible;
   // }
   &__btns {
-    margin-left: -5%;
+    margin-left: -4.7%;
   }
   &-slide {
     max-width: 47.231%;
