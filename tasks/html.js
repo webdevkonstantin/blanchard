@@ -3,7 +3,7 @@ const include = require("gulp-file-include");
 // const prettier = require('gulp-prettier');
 const beautify = require("gulp-html-beautify");
 const browserSync = require("browser-sync");
-const path = require("./path.js");
+const path = require("./path");
 
 module.exports = function html() {
   return (

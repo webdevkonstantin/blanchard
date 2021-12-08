@@ -1,19 +1,20 @@
-// const bulk = require("gulp-sass-bulk-importer");
-// const clean = require("gulp-clean-css");
 // const map = require("gulp-sourcemaps");
+// const bulk = require("gulp-sass-bulk-importer");
 const { src, dest } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const prefixer = require("gulp-autoprefixer");
-// const concat = require("gulp-concat");
-const prettier = require("gulp-prettier");
+const clean = require("gulp-clean-css");
+const concat = require("gulp-concat");
+// const prettier = require("gulp-prettier");
 const browserSync = require("browser-sync").create();
-const path = require("./path.js");
+const path = require("./path");
 
 module.exports = function styles() {
   return (
     src(path.src.scss)
       // .pipe(map.init())
-      .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
+      .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+      // .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
       .pipe(
         prefixer({
           cascade: false,
@@ -30,9 +31,13 @@ module.exports = function styles() {
           ],
         })
       )
-      .pipe(prettier())
-      // .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-      // .pipe(concat("style.min.css"))
+      // .pipe(prettier())
+      .pipe(
+        clean({
+          level: 2,
+        })
+      )
+      .pipe(concat("style.min.css"))
       // .pipe(map.write("../sourcemaps/"))
       .pipe(dest(path.build.css))
       .pipe(browserSync.stream())

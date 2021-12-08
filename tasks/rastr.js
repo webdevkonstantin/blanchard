@@ -5,7 +5,7 @@ const recompress = require("imagemin-jpeg-recompress");
 const pngquant = require("imagemin-pngquant");
 const size = require("gulp-size");
 const browserSync = require("browser-sync");
-const path = require("./path.js");
+const path = require("./path");
 
 module.exports = function rastr() {
   return src(path.src.img + ".+(png|jpg|jpeg|gif|svg|ico)")

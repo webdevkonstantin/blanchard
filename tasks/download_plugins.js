@@ -1,10 +1,6 @@
 const { src, dest } = require("gulp");
-// const sass = require("gulp-sass")(require("sass"));
-// const uglify = require("gulp-uglify-es").default;
-// const concat = require("gulp-concat");
-// const map = require("gulp-sourcemaps");
 const chalk = require("chalk");
-const path = require("./path.js");
+const path = require("./path");
 const db = require("./mongodb");
 
 module.exports = function download_plugins(done) {
@@ -23,12 +19,6 @@ module.exports = function download_plugins(done) {
             )
           );
         });
-        // src(plugins)
-        // .pipe(map.init())
-        // .pipe(sass({outputStyle: "compressed",}).on("error", sass.logError))
-        // .pipe(concat("libs.min.css"))
-        // .pipe(map.write("../sourcemaps/"))
-        // .pipe(dest(path.build.css_libs));
       } else {
         return done(console.log(chalk.red.bold("CSS plugins were not loaded.")));
       }
@@ -49,12 +39,6 @@ module.exports = function download_plugins(done) {
             )
           );
         });
-        // src(plugins)
-        // .pipe(map.init())
-        // .pipe(concat("libs.min.js"))
-        // .pipe(uglify()) //Сожмем наш js
-        // .pipe(map.write("../sourcemaps/"))
-        // .pipe(dest(path.build.js_libs));
       } else {
         return done(console.log(chalk.red.bold("JS plugins were not loaded.")));
       }

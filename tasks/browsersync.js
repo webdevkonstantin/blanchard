@@ -1,6 +1,6 @@
 const { watch, parallel, series } = require("gulp");
 const browserSync = require("browser-sync").create();
-const path = require("./path.js");
+const path = require("./path");
 
 module.exports = function browsersync() {
   browserSync.init({

@@ -4,7 +4,7 @@ const include = require("gulp-file-include");
 const concat = require("gulp-concat");
 // const map = require('gulp-sourcemaps');
 const browserSync = require("browser-sync").create();
-const path = require("./path.js");
+const path = require("./path");
 
 module.exports = function scripts() {
   return (

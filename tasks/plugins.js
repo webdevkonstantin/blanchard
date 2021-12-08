@@ -1,9 +1,9 @@
 const fs = require("fs");
 const chalk = require("chalk");
-const path = require("./path.js");
+const path = require("./path");
 
-const cssFilePath = `${path.src.page_blocks}/_plugins-css.html`;
-const jsFilePath = `${path.src.page_blocks}/_plugins-js.html`;
+const cssFilePath = `${path.src.page_blocks}/__head/_plugins-css.html`;
+const jsFilePath = `${path.src.page_blocks}/_bottom/_plugins-js.html`;
 
 function writeToFile(path, data, message) {
   try {
