@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 12 7" id="icon-arrow-down" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6 1 1" stroke="currentColor"/></svg><svg fill="none" viewBox="0 0 7 12" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M6 11L1 6l5-5" stroke="currentColor"/></svg><svg fill="none" viewBox="0 0 7 12" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M1 11l5-5-5-5" stroke="currentColor"/></svg><svg fill="currentColor" viewBox="0 0 13 13" id="icon-login" xmlns="http://www.w3.org/2000/svg"><path d="M5.12 9.093l1.02 1.017L9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z"/></svg></svg>
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-arrow-down" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M11 1L6 6 1 1" stroke="currentColor" />
+    </g>
+  </symbol>
+  <symbol id="icon-arrow-left" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M6 11L1 6l5-5" stroke="currentColor" />
+    </g>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M1 11l5-5-5-5" stroke="currentColor" />
+    </g>
+  </symbol>
+  <symbol id="icon-login" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M5.12 9.093l1.02 1.017L9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z" />
+    </g>
+  </symbol>
+  <symbol id="icon-tooltip" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M.262 3.455h1.476V10H.262V3.455zM1 1.903a1.02 1.02 0 01-.723-.274A.906.906 0 010 .959C0 .695.092.472.277.289A.988.988 0 011 0c.287 0 .523.091.708.274.195.172.292.39.292.654a.949.949 0 01-.292.7.964.964 0 01-.708.275z" fill="currentColor" />
+    </g>
+  </symbol>
+</svg>
