@@ -1,4 +1,4 @@
-/* interface */
+/* common */
 .container {
   max-width: 1630px;
   margin: 0 auto;
@@ -23,7 +23,8 @@
 .btn {
   display: block;
   background-color: transparent;
-  color: var(--color-white);
+  color: #fff;
+  // color: var(--color-white);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
@@ -55,7 +56,7 @@
 .bg-focus:focus-visible::before,
 .outline-focus:focus-visible::before,
 .link-focus:focus-visible::before,
-.transparent-focus:focus-visible::before  {
+.transparent-focus:focus-visible::before {
   opacity: 1;
 }
 
@@ -99,27 +100,31 @@
   }
 }
 .transparent-focus:hover:not(:focus-visible) {
-  background-color: #9D5CD0;
-  color: var(--color-white);
+  background-color: #9d5cd0;
+  color: #fff;
 }
 .transparent-focus:active:not(:focus-visible) {
-  background-color: #7943A4;
-  border: 2px solid #D1A9F0;
+  background-color: #7943a4;
+  border: 2px solid #d1a9f0;
 }
 
 .link-focus {
+  font-weight: 600;
+  color: #9d5cd0;
   &::before {
-    background-color: #9D5CD0;
+    background-color: #9d5cd0;
   }
 }
 .link-focus:focus-visible {
-  color: var(--color-white);
+  color: #fff;
 }
 .link-focus:hover:not(:focus-visible) {
-  color: #7943A4;
+  color: #9d5cd0;
+  border-bottom: 1px solid #9d5cd0;
 }
 .link-focus:active:not(:focus-visible) {
-  color: #333333;
+  color: #7943a4;
+  border-bottom: 1px solid #7943a4;
 }
 
 .title {
@@ -128,9 +133,9 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
-  color: var(--color-text);
+  color: #333;
 }
 
 .color-white {
-  color: var(--color-white);
+  color: #fff;
 }

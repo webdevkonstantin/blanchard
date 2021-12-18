@@ -50,7 +50,7 @@
       border-radius: 100%;
       background-color: #ececec;
       background-image: url("../img/arrow-down-black.svg");
-      @include bg("18px 9px", "center");
+      @include bg("auto", "center");
       transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
     }
     &.active {

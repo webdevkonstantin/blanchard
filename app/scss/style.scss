@@ -3,38 +3,22 @@
 @import "global/fonts";
 @import "global/default";
 @import "global/animation";
-@import "global/interface";
 
-// components
-@import "../_desktop/components";
-// blocks
-@import "../_desktop/blocks";
+// min-width 1201px - desktop
+@import '../_desktop';
 // max-width 1200px - laptop
 @include media-lg {
-  @import "global/interface--lg";
-  // components
-  @import "../_laptop/components";
-  // blocks
-  @import "../_laptop/blocks";
+  @import '../_laptop';
 }
 // max-width 992px - tablet
 @include media-md {
-  // components
-  @import "../_tablet/components";
-  // blocks
-  @import "../_tablet/blocks";
+  @import '../_tablet';
 }
 // max-width 768px - mobile
 @include media-sm {
-  @import "global/interface--sm";
-  // blocks
-  @import "../_mobile/sm/blocks";
+  @import '../_mobile/sm';
 }
 // max-width 575.98px
 @include media-xs {
-  @import "global/interface--xs";
-  // components
-  @import "../_mobile/xs/components";
-  // blocks
-  @import "../_mobile/xs/blocks";
+  @import '../_mobile/xs';
 }

@@ -1,0 +1,78 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9d5cd0;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: #d1a9f0;
+  }
+  &:focus {
+    outline: transparent;
+  }
+  &:active,
+  &.active {
+    border: 1px solid #9d5cd0;
+    background-color: #9d5cd0;
+    color: #fff;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    z-index: -10;
+    opacity: 0;
+  }
+  &.active::before,
+  &.active::after {
+    z-index: 10;
+    opacity: 1;
+    transform: scale(1) translateX(-50%) translateY(0);
+  }
+  // треугольник тултипа
+  &::before {
+    content: "";
+    bottom: 100%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #9d5cd0 transparent transparent;
+    transform: scale(0.6) translateX(-80%) translateY(-50%);
+    // анимация исчезновения
+    // transition: opacity .3s;
+    transition: transform 0.4s cubic-bezier(0.84, -0.18, 0.31, 1.26), opacity 0.3s 0.2s;
+  }
+  &.active::before {
+    // анимация появления
+    // transition: opacity .35s;
+    transition: all 0.4s cubic-bezier(0.84, -0.18, 0.31, 1.26) 0.2s;
+  }
+  // контентная часть тултипа
+  &::after {
+    content: attr(data-tooltip);
+    bottom: 180%;
+    display: block;
+    padding: 8px 11px;
+    max-width: 264px;
+    width: max-content;
+    background: #9d5cd0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    transform: scale(0.6) translateX(-75%) translateY(-50%);
+    // анимация исчезновения
+    transition: all 0.4s cubic-bezier(0.84, -0.18, 0.31, 1.26) 0.3s;
+  }
+  &.active::after {
+    // анимация появления
+    transition: all 0.4s cubic-bezier(0.84, -0.18, 0.31, 1.26);
+  }
+}
