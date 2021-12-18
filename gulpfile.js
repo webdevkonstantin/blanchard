@@ -17,7 +17,7 @@ exports.ttf_to_woff = tasks.ttf_to_woff;
 exports.html = tasks.html;
 exports.styles = tasks.styles;
 exports.scripts = tasks.scripts;
-exports.sprite = tasks.sprite;
+// exports.sprite = tasks.sprite;
 exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
 
@@ -37,15 +37,13 @@ exports.init_files = gulp.series(
   exports.ttf_to_woff,
   exports.create_libs_min,
   // exports.download_plugins,
-  exports.sprite,
+  // exports.sprite,
   exports.rastr,
   exports.webp
 );
 
 // exports.update_plugins = gulp.series(exports.create_plugins, exports.download_plugins);
 exports.update_plugins = gulp.series(exports.create_libs_min);
-exports.update_images = gulp.series(exports.sprite, exports.rastr, exports.webp);
-
+exports.update_images = gulp.series(/* exports.sprite, */ exports.rastr, exports.webp);
 exports.build_html = gulp.series(exports.init_files, exports.html, exports.scripts, exports.styles);
-
 exports.default = gulp.parallel(exports.browsersync, exports.watch);

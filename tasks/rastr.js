@@ -34,7 +34,7 @@ module.exports = function rastr() {
           }),
           recompress({
             loops: 6,
-            min: 50,
+            min: 60,
             max: 90,
             quality: "high",
             use: [
