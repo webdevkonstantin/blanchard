@@ -7,3 +7,4 @@
 @@include('../__page/blocks/catalog/_catalog.js')
 @@include('../__page/blocks/events/_events.js')
 @@include('../__page/blocks/publications/_publications.js')
+@@include('../__page/blocks/projects/_projects.js')
