@@ -28,6 +28,4 @@ function mobileEventsSlider() {
 
 mobileEventsSlider();
 
-window.addEventListener("resize", () => {
-  mobileEventsSlider();
-});
+window.addEventListener("resize", mobileEventsSlider);
