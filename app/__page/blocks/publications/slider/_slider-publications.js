@@ -1,5 +1,5 @@
-/* publications swiper */
-const publicationsSlider = document.querySelector(".publications .swiper");
+/* publications slider */
+const publicationsSlider = document.querySelector(".slider-publications");
 let publicationsSwiper;
 
 function mobilePublicationsBlocks() {
@@ -12,12 +12,12 @@ function mobilePublicationsBlocks() {
       },
       spaceBetween: 50,
       pagination: {
-        el: ".swiper__pagination",
+        el: ".swiper-pagination",
         type: "fraction",
       },
       navigation: {
-        nextEl: ".swiper__btn--next",
-        prevEl: ".swiper__btn--prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
 
       breakpoints: {

@@ -1,0 +1,47 @@
+<div class="publications__filter filter">
+  <div class="filter__top">
+    <h4 class="filter__caption filter__spoiler">Категории</h4>
+    <ul class="filter__list list-reset ">
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Бестселлеры'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Искусство'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Архитектура'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Дизайн'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Мода'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Детям'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Художественная литература'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Публицистика'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Путеводители'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Философия'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Учебная литература'})
+      </li>
+      <li class="filter__item">
+        @@include('check/_check.html', {"text": 'Журналы и газеты'})
+      </li>
+    </ul>
+  </div>
+  <div class="filter__bottom">
+    <h4 class="filter__caption filter__caption_price">Цена</h4>
+    @@include('price-filter/_price-filter.html')
+  </div>
+</div>

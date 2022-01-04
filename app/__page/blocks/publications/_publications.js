@@ -1,3 +1,3 @@
 /* publications */
-@@include('check/_check.js')
-@@include('swiper/_publications-swiper.js')
+@@include('filter/check/_check.js')
+@@include('slider/_slider-publications.js')
