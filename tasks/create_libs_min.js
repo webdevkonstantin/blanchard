@@ -42,7 +42,7 @@ module.exports = function create_libs_min(done) {
         );
 
         let url = `css/libs.min.css`;
-        let writeData = `<link rel="stylesheet" href="${url}" />`;
+        let writeData = `<link rel="stylesheet" href="${url}">`;
 
         fs.writeFile(cssFilePath, writeData, function (error) {
           if (error) throw error; // если возникла ошибка
@@ -83,7 +83,7 @@ module.exports = function create_libs_min(done) {
         );
 
         let url = `js/libs.min.js`;
-        let writeData = `<script src="${url}"></script>`;
+        let writeData = `<script type="text/javascript" src="${url}"></script>`;
 
         fs.writeFile(jsFilePath, writeData, function (error) {
           if (error) throw error; // если возникла ошибка

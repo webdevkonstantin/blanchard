@@ -38,7 +38,7 @@ module.exports = function create_fonts(done) {
   let fonts = [];
 
   db.getProjectDataByParam("fonts")
-    // из массива шрифтов из документа (таблицы) проекта
+    // из массива шрифтов из документа/таблицы проекта
     // создаем массив объектов для этих же шрифтов с весом, семейством и стилем
     .then((fontsList) => {
       if (fontsList.length > 0) {
