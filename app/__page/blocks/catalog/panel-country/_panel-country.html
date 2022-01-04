@@ -1,0 +1,15 @@
+<div class="tabs-country__panel panel-country @@class" data-target="@@target">
+  <p class="panel-country__descr descr"> 
+    Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
+  </p>
+  <div class="panel-country__inner">
+    @@if (active === true) {
+      @@include('tabs-figure/_tabs-figure.html', {"active": true})
+      @@include('accordion-figure/_accordion-figure.html', {"active": true, "class": "active"})
+    }
+    @@if (active === false) {
+      @@include('tabs-figure/_tabs-figure.html', {"active": false})
+      @@include('accordion-figure/_accordion-figure.html', {"active": false, "class": ""})
+    }
+  </div>
+</div>

@@ -16,7 +16,7 @@ function tabsActive(tabPath, tabTarget) {
   });
 }
 
-tabsActive(".tabs__btn", ".tabs__pane");
-tabsActive(".accordion-block__btn", ".tabs-left__content");
+tabsActive(".tabs-country__btn", ".tabs-country__panel");
+tabsActive(".tabs-figure__btn", ".tabs-figure__content");
 
-@@include('accordion/_catalog-accordion.js')
+@@include('panel-country/accordion-figure/_accordion-figure.js')

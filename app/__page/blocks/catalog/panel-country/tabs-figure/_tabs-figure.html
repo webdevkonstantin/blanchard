@@ -1,0 +1,9 @@
+<div class="panel-country__left tabs-figure">
+  @@if (active === true) {
+    @@include('content-active/_content-active.html')
+    @@include('content-plug/_content-plug.html', {"class": ""})
+  }
+  @@if (active === false) {
+    @@include('content-plug/_content-plug.html', {"class": "plug"})
+  }
+</div> 

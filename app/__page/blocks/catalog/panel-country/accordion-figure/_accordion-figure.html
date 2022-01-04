@@ -1,0 +1,17 @@
+<div class="panel-country__right accordion-figure">
+  <div class="accordion-figure__item @@class">
+    <button class="accordion-figure__header btn-reset">
+      <span class="accordion-figure__title">C 1400 по 1499 гг.</span>
+      <span class="accordion-figure__icon"></span>
+    </button>
+    <div class="accordion-figure__content">
+      @@if (active === true) {
+        @@include('tabs-figure-list/_tabs-figure-list.html')
+      }
+      @@if (active === false) {
+        @@include('tmp/block/_plug-block.html')
+      }
+    </div>
+  </div>
+  @@include('tmp/_accordion-figure-items.html')
+</div>
