@@ -1,5 +1,5 @@
-/* events swiper */
-const eventsSlider = document.querySelector(".events .swiper");
+/* events slider */
+const eventsSlider = document.querySelector(".slider-events");
 let eventsSwiper;
 
 function mobileEventsSlider() {
@@ -8,9 +8,9 @@ function mobileEventsSlider() {
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
-      slideClass: "events__item",
+      slideClass: "swiper-slide",
       pagination: {
-        el: ".events__slider-pagination",
+        el: ".swiper-pagination",
         clickable: true,
       },
     });

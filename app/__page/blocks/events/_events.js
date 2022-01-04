@@ -1,5 +1,7 @@
+@@include('slider/_slider-events.js')
+
 let eventsBtn = document.querySelector(".events__btn");
-let allitems = document.querySelectorAll(".events__item");
+let allitems = document.querySelectorAll(".slider-events__item ");
 
 eventsBtn.addEventListener("click", function() {
   allitems.forEach(item => {
@@ -8,4 +10,3 @@ eventsBtn.addEventListener("click", function() {
   
   this.style.display = "none";
 })
-@@include('swiper/_events-swiper.js')
