@@ -1,0 +1,22 @@
+/* catalog */
+@import 'tabs-country';
+
+.catalog {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 653px;
+    margin-bottom: 12px;
+  }
+  &__title {
+    margin-right: 20px;
+    margin-bottom: 3px;
+  }
+  &__list {
+    width: 66.25%;
+  }
+}

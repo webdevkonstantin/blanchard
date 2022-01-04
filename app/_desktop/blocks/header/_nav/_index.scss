@@ -1,0 +1,40 @@
+@import "simplebar";
+
+/* nav-header */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    display: flex;
+    margin-right: 10px;
+    max-width: 173px;
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1px;
+    margin-right: 99px;
+    // margin-right: 4.948vw;
+    width: 56.65%;
+  }
+  &__item {
+    margin-right: 10px;
+  }
+  &__link {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    transition: color 0.4s ease-in-out;
+    &_login {
+      margin-top: -1px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+}

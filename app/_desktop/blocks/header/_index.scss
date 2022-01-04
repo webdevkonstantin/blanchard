@@ -1,0 +1,15 @@
+@import "_mobile-header", "_nav", "hero";
+
+/* header */
+.header {
+  &__top {
+    background-color: #000;
+    // background-color: var(--color-black);
+    color: #fff;
+    // color: var(--color-white);
+  }
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

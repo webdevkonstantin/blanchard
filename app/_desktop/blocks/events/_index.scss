@@ -1,0 +1,14 @@
+@import 'slider';
+
+/* events */
+.events {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  &__title {
+    margin-bottom: 17px;
+  }
+  &__btn {
+    margin: 0 auto;
+    min-width: 188px;
+  }
+}

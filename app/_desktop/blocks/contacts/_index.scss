@@ -1,0 +1,98 @@
+/* contacts */
+@import "form";
+
+.order-contacts {
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+  }
+  &__form {
+    margin-bottom: 38px;
+  }
+}
+
+.socials-contacts {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    @include bg("60%", "center");
+    transition: opacity .3s ease-in-out;
+    &:focus,
+    &:hover {
+      outline: transparent;
+      opacity: 0.5;
+    }
+    &:active {
+      border: 1px solid #9643a4;
+      opacity: 1;
+    }
+    &_wa {
+      background-color: #30bf39;
+      background-image: url("../img/whatsapp.svg");
+    }
+    &_tg {
+      background-color: #2aabee;
+      background-image: url("../img/telegram.svg"),
+        linear-gradient(180deg, #2aabee 0%, #229ed9 99.26%);
+    }
+  }
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.contacts {
+  overflow-x: hidden;
+  min-height: auto;
+  &__wrap {
+    padding-top: 124px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+  }
+  &__top {
+    margin-bottom: 27px;
+    line-height: 32px;
+    color: #333;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &__address {
+    font-style: normal;
+    font-size: 16px;
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__order {
+    width: 32.5%;
+    background-color: #fff;
+  }
+  &__map {
+    margin-top: -217px;
+    margin-right: calc((-100vw + 100%) / 2);
+    width: calc(67.5% + ((100vw - 100%) / 2));
+    min-height: 698px;
+    border-left: 1px solid #cacaca;
+  }
+}

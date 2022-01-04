@@ -1,0 +1,23 @@
+/* slider hero */
+.slider-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  animation: zoomeffect 18s infinite;
+  &__slide {
+    @include bg("cover", "center");
+    &:nth-child(1) {
+      background-image: url("../img/hero/hero-1--1920.jpg");
+    }
+    &:nth-child(2) {
+      background-image: url("../img/hero/hero-2--1920.jpg");
+    }
+    &:nth-child(3) {
+      background-image: url("../img/hero/hero-3--1920.jpg");
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '_mobile-header', '_nav', 'hero';
+
+/* header */
+.header {
+  &__container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &-mobile {
+    &-logo {
+      width: 97px;
+    }
+  }
+}

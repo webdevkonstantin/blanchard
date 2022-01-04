@@ -1,0 +1,25 @@
+/* panel-country */
+@import 'accordion-figure';
+
+.panel-country {
+  display: none;
+  &.active {
+    display: block;
+  }
+  &__descr {
+    margin-bottom: 39px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  &__left {
+    max-width: 750px;
+    width: 100%;
+  }
+  &__right {
+    max-width: 800px;
+    width: 100%;
+  }
+}

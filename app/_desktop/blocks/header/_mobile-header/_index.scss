@@ -1,0 +1,9 @@
+@import 'burger';
+
+/* mobile-header */
+.mobile-header {
+  display: none;
+  &__logo {
+    display: none;
+  }
+}

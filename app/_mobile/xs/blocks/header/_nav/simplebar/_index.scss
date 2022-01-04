@@ -1,0 +1,11 @@
+/* .nav simplebar */
+.simplebar {
+  &-track.simplebar-vertical {
+    width: 2px;
+    background-color: #000;
+  }
+  &-scrollbar {
+    width: 2px;
+    background-color: #fff;
+  }
+}

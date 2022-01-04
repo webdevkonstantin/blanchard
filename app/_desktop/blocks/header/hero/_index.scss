@@ -1,0 +1,46 @@
+@import 'menu', 'slider';
+
+/* hero */
+.hero {
+  position: relative;
+  word-wrap: break-word;
+  overflow: hidden;
+  color: #fff;
+  // color: var(--color-white);
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 122px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 83px;
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 92px;
+    max-width: 600px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 20px;
+    min-width: 314px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    &:hover:not(:focus-visible) {
+      background-color: #9d5cd0;
+    }
+    &:active:not(:focus-visible) {
+      background-color: #7943a4;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import 'filter', 'slider';
+
+/* publications */
+.publications {
+  padding-top: 80px;
+  padding-bottom: 68px;
+  background-image: url("../img/publications/publications-bg.jpg");
+  @include bg("cover", "center");
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: auto;
+    padding-bottom: 12px;
+    max-width: 400px;
+    min-width: 277px;
+    width: 100%;
+  }
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}

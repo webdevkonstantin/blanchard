@@ -1,0 +1,15 @@
+@import 'burger', 'mobile-search';
+
+/* mobile header */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    margin-right: 7px;
+    width: 187px;
+  }
+  &__img {
+    width: 100%;
+  }
+}

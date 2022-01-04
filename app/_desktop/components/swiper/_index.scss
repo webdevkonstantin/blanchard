@@ -1,0 +1,57 @@
+/* common swiper styles */
+.swiper {
+  &-btns {
+    position: relative;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 30px;
+  }
+  &-button-prev,
+  &-button-next {
+    margin-top: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #666;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    outline: transparent;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    &:focus-visible {
+      border: 2px solid #000;
+    }
+    &:hover:not(:focus-visible) {
+      background-color: #9d5cd0;
+    }
+    &:active:not(:focus-visible) {
+      background-color: #7943a4;
+      border: 2px solid #000;
+    }
+    /* стилизация стрелки внутри кнопок навигации */
+    &::after {
+      // font-size: 12px;
+      font-size: 10px;
+      color: #fff;
+    }
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      pointer-events: auto;
+      cursor: not-allowed;
+      &:hover:not(:focus-visible),
+      &:active:not(:focus-visible),
+      &:focus-visible {
+        background-color: #666;
+        border: 2px solid transparent;
+      }
+    }
+  }
+  &-button-prev {
+    left: 0;
+    padding-right: 3px;
+  }
+  &-button-next {
+    right: 0;
+    padding-left: 3px;
+  }
+}

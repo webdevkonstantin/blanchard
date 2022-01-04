@@ -1,0 +1,19 @@
+@import "check", "price-filter";
+
+/* filter */
+.filter {
+  &__top {
+    // margin-bottom: 25px;
+    margin-bottom: auto;
+  }
+  &__caption {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    &_price {
+      margin-bottom: 7px;
+    }
+  }
+}

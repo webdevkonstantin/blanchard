@@ -1,0 +1,16 @@
+@import 'menu';
+
+/* hero */
+.hero {
+  &__container {
+    padding-top: 113px;
+    padding-bottom: 115px;
+  }
+  &__title {
+    margin-bottom: 11px;
+  }
+  &__text {
+    margin-bottom: 133px;
+    max-width: 661px;
+  }
+}

@@ -1,0 +1,74 @@
+@import 'panel-country';
+
+.tabs-country {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__btn {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    @include bg("contain", "center");
+    transition: filter 0.3s ease-in-out, border 0.3s ease-in-out;
+    &_1 {
+      background-image: url("../img/catalog/catalog-country--1.png");
+    }
+    &_2 {
+      background-image: url("../img/catalog/catalog-country--2.png");
+    }
+    &_3 {
+      background-image: url("../img/catalog/catalog-country--3.png");
+    }
+    &_4 {
+      background-image: url("../img/catalog/catalog-country--4.png");
+    }
+    &_5 {
+      background-image: url("../img/catalog/catalog-country--5.png");
+    }
+    &:hover,
+    &:focus-visible {
+      outline: 0;
+      filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+    }
+    &:active:not(:focus-visible) {
+      filter: none;
+      border: 2px solid #7943a4;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      bottom: -11px;
+      right: -11px;
+      left: -11px;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      background-color: transparent;
+      z-index: -1;
+      transition: border 0.3s ease-in-out;
+    }
+    &.active {
+      &:hover:not(:focus-visible),
+      &:focus-visible,
+      &:active:not(:focus-visible) {
+        outline: 0;
+        filter: none;
+        border: 2px solid transparent;
+      }
+      &::before {
+        border: 2px solid #7943a4;
+      }
+    }
+  }
+}
