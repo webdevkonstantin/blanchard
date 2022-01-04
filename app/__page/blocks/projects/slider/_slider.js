@@ -3,7 +3,7 @@ let projectsSwiper;
 
 projectsSwiper = new Swiper(projectsSlider, {
   slidesPerView: 3,
-  slidesPerGroup: 1,
+  slidesPerGroup: 3,
   spaceBetween: 30,
   loop: true,
   navigation: {
@@ -18,12 +18,12 @@ projectsSwiper = new Swiper(projectsSlider, {
     },
     576: {
       slidesPerView: 2,
-      slidesPerGroup: 1,
+      slidesPerGroup: 2,
       spaceBetween: 34,
     },
     1201: {
       slidesPerView: 3,
-      slidesPerGroup: 1,
+      slidesPerGroup: 3,
       spaceBetween: 50,
     },
   },

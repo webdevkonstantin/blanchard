@@ -1,4 +1,4 @@
 /* projects tooltip */
 @@include("tooltip/_tooltip.js")
-/* projects swiper */
-@@include("swiper/_swiper.js")
+/* projects slider */
+@@include("slider/_slider.js")
