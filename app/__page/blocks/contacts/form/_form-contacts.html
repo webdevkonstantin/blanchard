@@ -1,0 +1,34 @@
+<form
+  class="order-contacts__form form-contacts"
+  action="mail.php"
+  enctype="multipart/form-data"
+  method="POST"
+>
+<input type="hidden" name="form_subject" value="Обратный звонок на сайте Blanchard">
+  <div class="form-contacts__group">
+    <input
+      class="form-contacts__input form-control"
+      type="text"
+      name="name"
+      id="contacts-name"
+      placeholder="Имя*"
+      autocomplete="off"
+      data-validate-field="name"
+    />
+  </div>
+  <div class="form-contacts__group">
+    <input
+      class="form-contacts__input form-control"
+      type="tel"
+      name="phone"
+      id="contacts-phone"
+      placeholder="Телефон*"
+      autocomplete="off"
+      data-validate-field="phone"
+    />
+  </div>
+  <div class="form-contacts__action">
+    <button class="form-contacts__btn btn transparent-focus">Заказать</button>
+    <span class="form-contacts__message"></span>
+  </div>
+</form>
