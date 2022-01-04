@@ -1,2 +1,3 @@
 @@include('choices/_gallery-choices.js')
-@@include('swiper/_gallery-swiper.js')
+@@include('modal/_gallery-modal.js')
+@@include('slider/_slider-gallery.js')

@@ -1,5 +1,6 @@
-/* gallery swiper */
-let gallerySlider = new Swiper(".gallery .swiper", {
+/* gallery slider */
+const gallerySlider = document.querySelector(".slider-gallery");
+let gallerySwiper = new Swiper(gallerySlider, {
   slidesPerView: 3,
   slidesPerGroup: 3,
   grid: {
@@ -7,12 +8,12 @@ let gallerySlider = new Swiper(".gallery .swiper", {
   },
   spaceBetween: 30,
   pagination: {
-    el: ".swiper__pagination",
+    el: ".swiper-pagination",
     type: "fraction",
   },
   navigation: {
-    nextEl: ".swiper__btn--next",
-    prevEl: ".swiper__btn--prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   breakpoints: {
