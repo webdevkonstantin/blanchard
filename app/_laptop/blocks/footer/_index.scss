@@ -1,0 +1,12 @@
+/* footer */
+.footer {
+  padding-top: 42px;
+  padding-bottom: 39px;
+  &__item {
+    margin-right: 30px;
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+  }
+}

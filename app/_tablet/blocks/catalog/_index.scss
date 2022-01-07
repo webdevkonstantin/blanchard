@@ -1,0 +1,17 @@
+/* catalog */
+@import "tabs-country";
+
+.catalog {
+  &__header {
+    margin-bottom: 13px;
+    // max-width: 668px;
+    max-width: none;
+  }
+  // &__title {
+  //   margin-right: 41px;
+  // }
+  &__list {
+    margin-top: 0;
+    width: 67%;
+  }
+}

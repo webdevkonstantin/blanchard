@@ -1,0 +1,19 @@
+@import 'article-events';
+
+.slider-events {
+  &__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 27px;
+    // margin-bottom: 51px;
+  }
+  &__item {
+    width: calc((100% - 27px * 2) / 3);
+    // &:not(:nth-child(-n + 2)) {
+    //   display: block;
+    // }
+    // &:not(:nth-child(-n + 3)) {
+    //   display: none;
+    // }
+  }
+}

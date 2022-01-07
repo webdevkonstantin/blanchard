@@ -1,6 +1,5 @@
 @import "tabs-figure", "plug";
 
-/* accordion-figure */
 .accordion-figure {
   &__header {
     display: flex;
@@ -51,7 +50,7 @@
     border-radius: 100%;
     background-color: #ececec;
     background-image: url("../img/arrow-down-black.svg");
-    @include bg("auto", "center");
+    @include bg("auto", "50% 60%");
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
   &__content {

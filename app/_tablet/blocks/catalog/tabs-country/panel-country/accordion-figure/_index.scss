@@ -1,0 +1,11 @@
+@import "tabs-figure";
+
+.accordion-figure {
+  &__item {
+    &.active {
+      & .accordion-figure__content {
+        height: 340px;
+      }
+    }
+  }
+}

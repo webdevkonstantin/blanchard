@@ -1,0 +1,25 @@
+/* events */
+.article-events {
+  &__content {
+    padding-top: 49px;
+  }
+  &__title {
+    margin-bottom: 2px;
+  }
+}
+
+.slider-events {
+  &__item {
+    width: calc((100% - 34px) / 2);
+    &:not(:nth-child(-n + 2)) {
+      display: none;
+    }
+  }
+}
+
+.events {
+  padding-top: 15px;
+  &__list {
+    gap: 34px;
+  }
+}

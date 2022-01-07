@@ -1,0 +1,11 @@
+.slider-gallery {
+  &__btns {
+    margin-left: 0;
+  }
+  &__wrapper {
+    height: 594px;
+  }
+  &__link {
+    height: calc((100% - 34px) / 2);
+  }
+}

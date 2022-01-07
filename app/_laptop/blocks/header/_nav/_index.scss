@@ -1,10 +1,6 @@
-/* .nav simplebar */
-.nav{
-  @import "simplebar";
-}
+@import "simplebar";
 
-/* nav */
-.nav {
+.nav-header {
   position: absolute;
   top: 0;
   right: 0;

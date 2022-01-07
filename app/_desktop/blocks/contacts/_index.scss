@@ -31,7 +31,7 @@
     border: 1px solid transparent;
     border-radius: 100%;
     @include bg("60%", "center");
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     &:focus,
     &:hover {
       outline: transparent;
@@ -71,6 +71,9 @@
     line-height: 32px;
     color: #333;
   }
+  &__title {
+    margin-bottom: 15px;
+  }
   &__subtitle {
     margin: 0;
     margin-bottom: 2px;
@@ -86,6 +89,7 @@
   }
   &__order {
     width: 32.5%;
+    min-width: 435px;
     background-color: #fff;
   }
   &__map {

@@ -1,0 +1,8 @@
+/* gallery */
+@import "slider";
+
+.gallery {
+  &__left {
+    min-width: 280px;
+  }
+}

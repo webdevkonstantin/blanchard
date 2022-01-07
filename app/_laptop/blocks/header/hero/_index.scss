@@ -1,6 +1,6 @@
+/* hero */
 @import 'menu';
 
-/* hero */
 .hero {
   &__container {
     padding-top: 113px;
@@ -9,8 +9,8 @@
   &__title {
     margin-bottom: 11px;
   }
-  &__text {
+  &__descr {
     margin-bottom: 133px;
-    max-width: 661px;
+    max-width: 660px;
   }
 }

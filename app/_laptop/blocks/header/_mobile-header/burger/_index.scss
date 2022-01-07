@@ -1,4 +1,3 @@
-/* burger */
 .burger {
   position: relative;
   display: flex;
@@ -29,14 +28,14 @@
     top: 11px;
     width: 24px;
   }
-  &--active > span {
+  &.active > span {
     transform: rotate(45deg);
   }
-  &--active > span::before {
+  &.active > span::before {
     top: 0;
     transform: rotate(0);
   }
-  &--active > span::after {
+  &.active > span::after {
     top: 0;
     width: 36px;
     transform: rotate(-90deg);

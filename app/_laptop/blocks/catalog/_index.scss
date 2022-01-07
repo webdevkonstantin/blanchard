@@ -1,0 +1,12 @@
+/* catalog */
+@import "tabs-country";
+
+.catalog {
+  &__header {
+    max-width: 657px;
+  }
+  &__list {
+    margin-top: 15px;
+    width: 66%;
+  }
+}

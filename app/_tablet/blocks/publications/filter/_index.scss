@@ -1,0 +1,19 @@
+.filter {
+  &__top {
+    margin-bottom: 25px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    max-height: 160px;
+  }
+  &__item {
+    max-width: 183px;
+    width: max-content;
+    &:nth-child(-n+5) {
+      margin-right: 30px;
+    }
+  }
+}

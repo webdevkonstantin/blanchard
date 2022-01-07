@@ -1,0 +1,12 @@
+@import 'panel-country';
+
+.tabs-country {
+  &__btn {
+    &::before {
+      top: -10px;
+      bottom: -10px;
+      right: -10px;
+      left: -10px;
+    }
+  }
+}

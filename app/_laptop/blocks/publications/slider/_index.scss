@@ -1,0 +1,11 @@
+@import 'card';
+
+.slider-publications {
+  &__btns {
+    margin-bottom: 31px;
+    margin-left: 1px;
+  }
+  &__pagination {
+    height: 14px;
+  }
+}

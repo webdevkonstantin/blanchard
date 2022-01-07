@@ -1,17 +1,19 @@
-/* tabs-figure */
 .tabs-figure {
   &__list {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    // align-content: flex-start;
+    align-content: space-between;
     flex-wrap: wrap;
     padding-top: 27px;
     padding-bottom: 15px;
-    // height: 297px;
+    min-width: 600px;
+    max-width: 680px;
     height: 339px;
   }
   &__item {
-    width: 256px;
+    margin-right: 10px;
+    width: max-content;
   }
   &__btn {
     position: relative;

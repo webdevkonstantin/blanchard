@@ -4,6 +4,9 @@
 .projects {
   padding-top: 80px;
   padding-bottom: 80px;
+  &__title {
+    margin-bottom: 17px;
+  }
   &__descr {
     margin-bottom: 20px;
   }

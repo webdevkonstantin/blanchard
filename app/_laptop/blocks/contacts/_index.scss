@@ -1,0 +1,36 @@
+/* contacts */
+@import "form";
+
+.order-contacts {
+  &__title {
+    &_socials {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.socials-contacts {
+  &__item {
+    margin-right: 32px;
+  }
+  &__link {
+    width: 58px;
+    height: 58px;
+    background-size: 62%;
+    &_tg {
+      background-position: 43% 55%;
+    }
+  }
+}
+
+.contacts {
+  &__wrap {
+    padding-top: 123px;
+  }
+  &__top {
+    margin-bottom: 28px;
+  }
+  &__subtitle {
+    margin-bottom: 3px;
+  }
+}
