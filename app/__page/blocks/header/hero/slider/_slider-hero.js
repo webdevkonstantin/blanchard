@@ -10,13 +10,4 @@ let heroSwiper = new Swiper(heroSlider, {
   },
   effect: "fade",
   allowTouchMove: false,
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  // pagination: {
-  //   el: ".swiper-bullet-pagination",
-  //   type: "bullets",
-  //   clickable: true,
-  // },
 });

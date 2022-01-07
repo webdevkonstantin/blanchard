@@ -4,7 +4,7 @@ let projectsSwiper;
 projectsSwiper = new Swiper(projectsSlider, {
   slidesPerView: 3,
   slidesPerGroup: 3,
-  spaceBetween: 30,
+  spaceBetween: 50,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -20,6 +20,11 @@ projectsSwiper = new Swiper(projectsSlider, {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
+    },
+    769: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50,
     },
     1201: {
       slidesPerView: 3,
