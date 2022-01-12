@@ -1,5 +1,3 @@
-@@include('simplebar/_simplebar.js')
-
 /* плавная навигация по якорным ссылкам */
 const anchors = document.querySelectorAll('a[href*="#"]');
 
