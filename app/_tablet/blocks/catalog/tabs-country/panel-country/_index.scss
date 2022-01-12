@@ -2,17 +2,12 @@
 
 .panel-country {
   &__inner {
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
   }
   &__descr {
     margin-bottom: 20px;
-}
-  &__left {
-    order: 2;
   }
   &__right {
-    order: 1;
-    max-width: none;
+    max-width: 100%;
   }
 }

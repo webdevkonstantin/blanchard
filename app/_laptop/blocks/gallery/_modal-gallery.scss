@@ -1,0 +1,10 @@
+.modal-gallery {
+  &__content {
+    max-width: 594px;
+    min-height: 594px;
+    &-right {
+      padding-top: 124px;
+      padding-left: 50px;
+    }
+  }
+}

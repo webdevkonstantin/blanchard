@@ -1,0 +1,10 @@
+/* about-us */
+.about-us {
+  padding-top: 49px;
+  padding-bottom: 41px;
+  &__descr {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

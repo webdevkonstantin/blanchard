@@ -2,7 +2,11 @@
 @import 'tooltip', 'slider';
 
 .projects {
-  &__descr {
-    overflow: hidden;
+  .simplebar {
+    &-content-wrapper {
+      outline: transparent;
+      overflow: auto;
+      overflow-y: hidden;
+    }
   }
 }

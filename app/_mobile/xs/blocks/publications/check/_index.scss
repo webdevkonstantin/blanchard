@@ -1,0 +1,36 @@
+.check {
+  display: none;
+  &.active {
+    display: block;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+  }
+  &__input {
+    // checked and focused text
+    &:checked ~ .check__text {
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 16px;
+        height: 1px;
+        background-color: #C283F3;
+      }
+      &::before {
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &::after {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
+  // custom checkbox frame
+  &__box {
+    top: 12px;
+  }
+  &__text {
+    line-height: 37px;
+  }
+}

@@ -1,0 +1,11 @@
+.slider-publications {
+  width: 100%;
+  &__btns {
+    display: none;
+  }
+  &__wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5.538%;
+  }
+}

@@ -1,0 +1,28 @@
+.modal-gallery {
+  padding: 15px;
+  &__content {
+    flex-direction: column;
+    max-width: 500px;
+    &-left {
+      width: 100%;
+      min-height: 200px;
+      max-height: 60vw;
+      overflow: hidden;
+    }
+    &-right {
+      padding: 19px 21px 20px 20px;
+      width: 100%;
+      min-height: 200px;
+    }
+  }
+  &__close {
+    right: 10px;
+    top: 10px;
+  }
+  &__header {
+    margin-bottom: 4px;
+  }
+  &__title {
+    margin-left: -1px;  
+  }
+}

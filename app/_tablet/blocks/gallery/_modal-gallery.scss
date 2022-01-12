@@ -1,0 +1,12 @@
+.modal-gallery {
+  padding: 50px;
+  &__content {
+    max-width: 100%;
+    &-left {
+      width: 45%;
+    }
+    &-right {
+      padding-right: 65px;
+    }
+  }
+}

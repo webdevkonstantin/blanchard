@@ -1,14 +1,9 @@
-@import '_mobile-header', '_nav', 'hero';
-
 /* header */
+@import 'mobile-header', 'nav', 'hero';
+
 .header {
   &__container {
     padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  &-mobile {
-    &-logo {
-      width: 97px;
-    }
+    padding-bottom: 7px;
   }
 }

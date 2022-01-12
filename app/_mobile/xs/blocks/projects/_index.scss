@@ -1,0 +1,10 @@
+/* projects */
+@import 'tooltip', 'slider';
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__descr {
+    margin-bottom: 9px;
+  }
+}

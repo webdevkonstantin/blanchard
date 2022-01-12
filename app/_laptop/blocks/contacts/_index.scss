@@ -1,6 +1,10 @@
 /* contacts */
 @import "form";
 
+.ymaps-2-1-79-controls__control {
+  display: none !important;
+}
+
 .order-contacts {
   &__title {
     &_socials {

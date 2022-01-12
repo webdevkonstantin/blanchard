@@ -31,7 +31,7 @@ module.exports = path = {
     html_components: `${srcDir}/__page/**/*.html`,
     not_html_components: `!${srcDir}/__page/**/*.html`,
     pug: `${srcDir}/pug/*.pug`,
-    js: `${srcDir}/js/*.js`,
+    js: `${srcDir}/js/main.js`,
     js_dest: `${srcDir}/js/`,
     js_components: `${srcDir}/__page/**/*.js`,
     sass: `${srcDir}/sass/*.sass`,

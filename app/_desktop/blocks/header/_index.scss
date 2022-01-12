@@ -1,6 +1,6 @@
-@import "_mobile-header", "_nav", "hero";
-
 /* header */
+@import "mobile-header", "nav", "hero";
+
 .header {
   &__top {
     background-color: #000;

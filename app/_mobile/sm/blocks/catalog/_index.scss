@@ -1,0 +1,42 @@
+/* catalog */
+.tabs-figure {
+  &__list {
+    max-width: 500px;
+    height: 434px;
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+.accordion-figure {
+  &__item {
+    &.active {
+      & .accordion-figure__content {
+        height: 434px;
+      }
+    }
+  }
+}
+
+.panel-country {
+  &__descr {
+    display: none;
+  }
+}
+
+.tabs-country {
+  &__list {
+    width: 100%;
+  }
+}
+
+.catalog {
+  &__header  {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-right: 0;
+    width: 100%;
+  }
+}

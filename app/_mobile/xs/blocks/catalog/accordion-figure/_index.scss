@@ -1,0 +1,40 @@
+@import "plug";
+
+.tabs-figure {
+  &__list {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    // height: auto;
+    height: 809px;
+  }
+  &__img {
+    &-wrap {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 14px;
+  }
+}
+
+.accordion-figure {
+  margin-bottom: 1px;
+  &__header {
+    padding-top: 20px;
+    padding-bottom: 19px;
+    font-size: 18px;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    background-size: 45%;
+  }
+  &__item {
+    &.active {
+      & .accordion-figure__content {
+        // height: auto;
+        height: 809px;
+      }
+    }
+  }
+}

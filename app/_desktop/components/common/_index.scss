@@ -1,5 +1,13 @@
 /* common */
-@import 'container', 'list-reset';
+@import 'container', 'list-reset', 'title', 'subtitle', 'descr';
+
+.color-white {
+  color: #fff;
+}
+
+.together {
+  white-space: nowrap;
+}
 
 .no-scroll {
   overflow: hidden;
@@ -132,26 +140,4 @@
 .link-focus:active:not(:focus-visible) {
   color: #7943a4;
   border-bottom: 1px solid #7943a4;
-}
-
-.title {
-  margin: 0;
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 65px;
-  color: #333;
-}
-
-.color-white {
-  color: #fff;
-}
-
-.descr {
-  margin: 0;
-  max-width: 1080px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: #333;
 }

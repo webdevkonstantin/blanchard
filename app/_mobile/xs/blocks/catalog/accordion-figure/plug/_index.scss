@@ -1,0 +1,12 @@
+.plug-block {
+  &__img {
+    min-height: 130px;
+    &-wrap {
+      margin-right: 30px;
+      min-width: 90px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+  }
+}

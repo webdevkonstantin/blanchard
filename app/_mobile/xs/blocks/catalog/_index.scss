@@ -1,0 +1,20 @@
+/* catalog */
+@import "accordion-figure";
+
+.tabs-country {
+  &__btn {
+    width: 32px;
+    height: 32px;
+    &::before {
+      top: -8px;
+      bottom: -8px;
+      right: -8px;
+      left: -8px;
+    }
+  }
+}
+
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 36px;
+}

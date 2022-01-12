@@ -12,12 +12,12 @@ function mobilePublicationsBlocks() {
       },
       spaceBetween: 50,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".slider-publications__pagination",
         type: "fraction",
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-publications__btn.swiper-button-next",
+        prevEl: ".slider-publications__btn.swiper-button-prev",
       },
 
       breakpoints: {

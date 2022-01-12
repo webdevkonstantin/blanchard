@@ -1,4 +1,12 @@
 .tooltip {
   margin-left: -3px;
   margin-right: 3px;
+  // треугольник тултипа
+  &::before {
+    display: none;
+  }
+  // контентная часть тултипа
+  &::after {
+    max-width: 240px;
+  }
 }

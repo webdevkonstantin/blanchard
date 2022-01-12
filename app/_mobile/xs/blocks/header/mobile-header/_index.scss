@@ -1,0 +1,8 @@
+@import 'burger', 'mobile-search';
+
+.mobile-header {
+  align-items: flex-start;
+  &__logo {
+    width: 97px;
+  }
+}

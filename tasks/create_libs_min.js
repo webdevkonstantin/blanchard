@@ -63,7 +63,7 @@ module.exports = function create_libs_min(done) {
 
       return pluginsObj;
     })
-    // потом создаем сжатый js файл с плагинами и добавляем его в папку js
+    // потом создаем сжатый js файл с плагинами/библиотеками и добавляем его в папку js
     .then((pluginsObj) => {
       const pluginsJS = pluginsObj.js.node_modules;
       if (pluginsJS.length > 0) {
@@ -83,7 +83,7 @@ module.exports = function create_libs_min(done) {
         );
 
         let url = `js/libs.min.js`;
-        let writeData = `<script type="text/javascript" src="${url}"></script>`;
+        let writeData = `<script src="${url}"></script>`;
 
         fs.writeFile(jsFilePath, writeData, function (error) {
           if (error) throw error; // если возникла ошибка

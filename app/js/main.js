@@ -1,3 +1,4 @@
+@@include('_common.js')
 @@include('../__page/blocks/header/_header.js')
 @@include('../__page/blocks/gallery/_gallery.js')
 @@include('../__page/blocks/catalog/_catalog.js')

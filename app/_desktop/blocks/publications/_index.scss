@@ -10,16 +10,11 @@
     display: flex;
     justify-content: space-between;
   }
-  // &__title {
-  //   margin-bottom: 15px;
-  // }
   &__left {
     display: flex;
     flex-direction: column;
     flex: 1;
-    // margin-right: auto;
     margin-right: 7px;
-    // padding-bottom: 12px;
     max-width: 400px;
     min-width: 277px;
     width: 100%;
@@ -27,7 +22,11 @@
   &__filter {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     height: 100%;
+  }
+  &__right {
+    padding-top: 33px;
+    max-width: 1160px;
+    width: 75%;
   }
 }

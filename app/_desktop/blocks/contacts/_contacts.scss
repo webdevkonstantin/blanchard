@@ -1,0 +1,40 @@
+.contacts {
+  overflow-x: hidden;
+  min-height: auto;
+  &__wrap {
+    padding-top: 124px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+  }
+  &__top {
+    margin-bottom: 27px;
+    line-height: 32px;
+    color: #333;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    margin-bottom: 2px;
+  }
+  &__address {
+    font-style: normal;
+    font-size: 16px;
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__order {
+    width: 32.5%;
+    min-width: 435px;
+    background-color: #fff;
+  }
+  &__map {
+    margin-top: -217px;
+    margin-right: calc((-100vw + 100%) / 2);
+    width: calc(67.5% + ((100vw - 100%) / 2));
+    min-height: 698px;
+    border-left: 1px solid #cacaca;
+  }
+}

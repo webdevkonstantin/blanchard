@@ -9,6 +9,9 @@
 }
 
 .slider-events {
+  &__list {
+    justify-content: space-between;
+  }
   &__item {
     width: calc((100% - 34px) / 2);
     &:not(:nth-child(-n + 2)) {

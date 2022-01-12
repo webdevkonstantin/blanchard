@@ -1,0 +1,56 @@
+/* publications */
+@import "check", "card";
+
+.filter {
+  &__top {
+    margin-bottom: 19px;
+  }
+  &__spoiler {
+    position: relative;
+    margin-bottom: 0;
+    padding: 1px 0;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    line-height: 36px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 12px;
+      height: 40%;
+      transform: translateY(-50%);
+      background-image: url("../img/arrow-down-white.svg");
+      @include bg("contain", "center");
+      transition: transform 0.3s ease-in-out;
+    }
+    &.active::after {
+      transform: translateY(-50%) rotateX(180deg);
+    }
+  }
+  &__list {
+    max-height: none;
+  }
+  &__item {
+    max-width: none;
+    width: 100%;
+    &:nth-child(-n + 5) {
+      margin-right: 0;
+    }
+  }
+}
+
+.slider-publications {
+  &__card {
+    margin-bottom: 52px;
+    max-width: 44.731%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.publications {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

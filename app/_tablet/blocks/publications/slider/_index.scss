@@ -1,11 +1,12 @@
 .slider-publications {
-  width: 92%;
-  padding-left: 0;
+  margin: 0 auto;
   padding-bottom: 0;
-  // overflow: visible;
-  // &__btns {
-  //   margin-left: -4.7%;
-  // }
+  padding-left: 0;
+  width: 92%;
+  &__btns {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }  
   &__card {
     max-width: 47.231%;
   }
