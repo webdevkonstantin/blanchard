@@ -33,10 +33,12 @@
   }
   &.active > span::before {
     top: 0;
+    left: -4px;
     transform: rotate(0);
   }
   &.active > span::after {
     top: 0;
+    left: -4px;
     width: 36px;
     transform: rotate(-90deg);
   }

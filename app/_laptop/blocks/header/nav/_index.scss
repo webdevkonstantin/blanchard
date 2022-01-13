@@ -10,9 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 96px;
+  margin-top: 0;
+  padding-top: 115px;
   padding-bottom: 51px;
-  padding-left: 50px;
+  padding-left: 48px;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.9);
   transform: translateX(-100%);
@@ -29,18 +30,22 @@
     flex-direction: column;
     align-items: flex-start;
     margin-right: 0;
-    height: 60%;
+    // height: 60%;
+    height: 68.1%;
   }
   &__item {
     margin-right: 0;
     margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__link {
     justify-content: center;
     font-size: 24px;
     &_login {
-      padding-top: 19px;
-      padding-bottom: 22px;
+      padding-top: 17px;
+      padding-bottom: 14px;
       min-width: 257px;
       font-size: 18px;
       line-height: 25px;

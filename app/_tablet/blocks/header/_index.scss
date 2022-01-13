@@ -1,1 +1,7 @@
 @import 'burger', 'mobile-search';
+
+.mobile-header {
+  &__logo {
+    margin-right: 10px;
+  }
+}

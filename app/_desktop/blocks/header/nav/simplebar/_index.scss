@@ -1,11 +1,19 @@
 .nav-header__list {
   .simplebar {
+    &-wrapper {
+      width: 100%;
+    }
     &-content {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      &::before,
+      &::after {
+        display: none;
+      }
     }
     &-content-wrapper {
+      margin-top: 5px;
       outline: transparent;
       overflow: auto;
       overflow-x: hidden;

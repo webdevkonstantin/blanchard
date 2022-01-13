@@ -1,1 +1,12 @@
-@import 'hero';
+@import "hero";
+
+.nav-header {
+  padding-left: 15px;
+  &__list {
+    .simplebar {
+      &-wrapper {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -22,11 +22,14 @@
   }
   &.active > span::before {
     top: 0;
+    left: -1px;
+    width: 20px;
     transform: rotate(0);
   }
   &.active > span::after {
     top: 0;
-    width: 25px;
+    left: -1px;
+    width: 20px;
     transform: rotate(-90deg);
   }
 }

@@ -12,6 +12,7 @@
     right: 0;
     left: 0;
     z-index: 3;
+    padding-top: 23px;
     padding-left: 50px;
     padding-right: 50px;
     width: 100%;
@@ -22,23 +23,20 @@
       transform: translate(0, 0);
     }
     &-btn {
-      &__open {
-        width: 27px;
-        height: 27px;
-      }
       &__wrap {
         display: block;
       }
       &__close {
         display: block;
-        width: 27px;
-        height: 27px;
+        width: 30px;
+        height: 29px;
         background-image: url("../img/icon-close-mobile.svg");
         @include bg("contain", "center");
       }
     }
     &__input {
-      width: 88%;
+      margin-right: 10px;
+      width: 86%;
     }
   }
 }

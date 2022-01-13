@@ -16,13 +16,14 @@
   &-form {
     position: absolute;
     z-index: 2;
-    top: 3.4%;
+    top: 4.6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1px;
+    padding-right: 1px;
     padding-bottom: 6px;
-    width: 25%;
+    padding-left: 3px;
+    width: 25.5%;
     background-color: #18171b;
     opacity: 0;
     transform: translateX(100%);
@@ -48,7 +49,8 @@
     }
     &__input {
       margin: 0;
-      width: 85%;
+      padding: 5px 2px;
+      width: 84.8%;
       background-color: transparent;
       border: transparent;
       border-bottom: 1px solid rgba(white, 0.8);
