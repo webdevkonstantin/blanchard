@@ -1,7 +1,9 @@
-.choices {
-  &__list {
-    &--dropdown {
-      background-color: var(--color-black);
+.gallery {
+  .choices {
+    &__list {
+      &--dropdown {
+        background-color: var(--color-black);
+      }
     }
   }
 }
