@@ -1,0 +1,10 @@
+.projects {
+  .simplebar {
+    &-content {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

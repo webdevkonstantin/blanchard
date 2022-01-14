@@ -1,6 +1,15 @@
 .tooltip {
   margin-left: -3px;
   margin-right: 3px;
+  transition: background-color 0s ease-in-out, color 0s ease-in-out;
+  &:hover {
+    background-color: transparent;
+  }
+  &.active {
+    background: url("../img/icon-close-white.svg") #9d5cd0;
+    @include bg("55%", "center");
+    color: transparent;
+  }
   // треугольник тултипа
   &::before {
     display: none;

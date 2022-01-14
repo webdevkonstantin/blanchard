@@ -3,24 +3,17 @@
 
 .gallery {
   padding-top: 80px;
-  padding-bottom: 77px;
+  padding-bottom: 71px;
   background-image: url("../img/gallery/gallery-bg.jpg");
   @include bg("cover", "center");
   color: #fff;
   // color: var(--color-white);
   &__container {
     display: flex;
-    justify-content: space-between;
-  }
-  &__left {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    // margin-right: auto;
-    // margin-right: 50px;
-    margin-right: 47px;
-    padding-bottom: 4px;
+  }
+  &__top {
+    width: 20.834vw;
     max-width: 400px;
     min-width: 300px;
   }
@@ -34,21 +27,23 @@
     color: #fff;
     // color: var(--color-white);
   }
-  &-bottom {
-    &__text {
-      margin: 0;
-      margin-bottom: -10px;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 32px;
-      color: #fff;
-      // color: var(--color-white);
-    }
-    &__link {
-      color: #c283f3;
-    }
-    &.tablet {
-      display: none;
-    }
+  &__bottom {
+    display: flex;
+  }
+  &__descr {
+    flex: 1;
+    align-self: flex-end;
+    margin: 0;
+    margin-right: 47px;
+    max-width: 400px;
+    min-width: 300px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    // color: var(--color-white);
+  }
+  &__link {
+    color: #c283f3;
   }
 }

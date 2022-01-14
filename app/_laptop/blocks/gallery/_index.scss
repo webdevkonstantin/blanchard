@@ -2,7 +2,10 @@
 @import "slider", "modal-gallery";
 
 .gallery {
-  &__left {
+  &__top {
+    min-width: 280px;
+  }
+  &__descr {
     min-width: 280px;
   }
 }

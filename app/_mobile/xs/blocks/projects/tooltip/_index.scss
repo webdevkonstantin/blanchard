@@ -1,4 +1,8 @@
 .tooltip {
   margin-left: 0px;
   margin-right: 0px;
+  // контентная часть тултипа
+  &::after {
+    background: #CACACA;
+  }
 }
