@@ -9,6 +9,7 @@ var accordion = (function (element) {
 
       if (item.classList.contains(className)) {
         element = item;
+        element.querySelector(".accordion-figure__content").style.height = _getContentHeight(item);
       }
     });
     return element;
@@ -41,25 +42,32 @@ var accordion = (function (element) {
           content = item.querySelector(".accordion-figure__content");
 
         if (itemActive === undefined) {
-          // добавляем элементу высоту
-          content.style.height = _getContentHeight(item);
           // добавляем класс active к элементу (в зависимости от выбранного заголовка)
           item.classList.add("active");
+          // добавляем активному элементу высоту
+          item.querySelector(".accordion-figure__content").style.height = _getContentHeight(item);
         } else {
-          content.style.height = "0px";
           // удаляем класс active у текущего элемента
           itemActive.classList.remove("active");
+          itemActive.querySelector(".accordion-figure__content").style.height = "0px";
           // если следующая вкладка не равна активной
           if (itemActive !== item) {
-            content.style.height = _getContentHeight(item);
             // добавляем класс active к элементу (в зависимости от выбранного заголовка)
             item.classList.add("active");
+            item.querySelector(".accordion-figure__content").style.height = _getContentHeight(item);
           }
         }
+      },
+      _actionResize = function (event, elem) {
+        let itemActive = _getItem(_items, "active");
+        // console.log("itemActive:", itemActive);
       },
       _setupListeners = function () {
         // добавим к элементу аккордиона обработчик события click
         _mainElement.addEventListener("click", _actionClick);
+        window.addEventListener("resize", function (event) {
+          _actionResize(event, _mainElement);
+        });
       };
 
     return {
@@ -67,6 +75,7 @@ var accordion = (function (element) {
         _mainElement = typeof element === "string" ? document.querySelector(element) : element;
         _items = _mainElement.querySelectorAll(".accordion-figure__item");
         _setupListeners();
+        _getItem(_items, "active");
       },
     };
   };
@@ -76,3 +85,5 @@ document.querySelectorAll(".accordion-figure").forEach((el) => {
   let catalogAccordion = accordion();
   catalogAccordion.init(el);
 });
+
+@@include("tabs-figure-list/_tabs-figure-list.js")
