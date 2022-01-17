@@ -27,8 +27,7 @@
       color: #c283f3;
     }
   }
-  // custom checkbox
-  // frame
+  // custom checkbox frame
   &__box {
     position: absolute;
     left: 0;
@@ -37,7 +36,7 @@
     // transform: translateY(-50%);
     width: 12px;
     height: 12px;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     border-radius: 0;
     background-color: transparent;
     transition: border 0.3s ease-in-out;

@@ -17,6 +17,7 @@ checkboxesInit();
 filterCaption.addEventListener("click", function () {
   this.classList.toggle("active");
   checklist.classList.toggle("active");
+
   checkboxes.forEach((checkboxItem) => {
     checkboxItem.classList.toggle("active");
     let checkbox = checkboxItem.querySelector(".check__input");
@@ -28,10 +29,15 @@ filterCaption.addEventListener("click", function () {
 });
 
 checkboxes.forEach((checkboxItem) => {
-  checkboxItem.addEventListener("click", function () {
-    let label = this;
-    if (!checklist.classList.contains("active")) {
-      label.classList.remove("active");
+  checkboxItem.addEventListener("click", function (event) {
+    let checkbox = checkboxItem.querySelector(".check__input");
+
+    if (checkbox.checked) {
+      checkboxItem.classList.add("active");
+    } else {
+      if (!checklist.classList.contains("active")) {
+        checkboxItem.classList.remove("active");
+      }
     }
   });
 });

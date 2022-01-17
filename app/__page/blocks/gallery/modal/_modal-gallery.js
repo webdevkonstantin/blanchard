@@ -2,8 +2,8 @@ let gallerySlides = document.querySelectorAll(".slider-gallery__link");
 let modal = document.querySelector(".modal-gallery");
 let body = document.querySelector("body");
 
-gallerySlides.forEach((el) => {
-  el.addEventListener("click", function () {
+gallerySlides.forEach((slide) => {
+  slide.addEventListener("click", function () {
     let img = this.querySelector("img");
     let link = img.getAttribute("src");
 

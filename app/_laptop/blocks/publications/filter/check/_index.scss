@@ -1,0 +1,18 @@
+.check {
+  &:hover:not(:focus-visible) .check__box {
+    border: 1px solid #fff;
+  }
+  &:hover:not(:focus-visible) .check__text {
+    color: #fff;
+  }
+  &.active {
+    .check__input {
+      &:checked + .check__box {
+        border: 1px solid #c283f3;
+      }
+      &:checked ~ .check__text {
+        color: #c283f3;
+      }
+    }
+  }
+}

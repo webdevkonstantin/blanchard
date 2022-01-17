@@ -1,3 +1,26 @@
+.modal-gallery{
+  .simplebar {
+    &-content {
+      display: flex;
+      justify-content: center;
+      &-wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-gallery {
   position: fixed;
   top: 0;
